@@ -1,8 +1,8 @@
 /* (NOTE: this one breaks often : they change the HTML often)
 ==UserStyle==
-@name        YouTube - remove non-scrolling header-bar and left-margin
+@name        YouTube - de-sticky the header-bar and remove left-margin
 @namespace   StylishThemes
-@version     1.0.2
+@version     1.0.3
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/youtube.user.css
 @license     CC-0
