@@ -1,0 +1,24 @@
+/* ==UserStyle==
+@name        YouTube remove scrolling-header-bar and 0-left-margin
+@namespace   StylishThemes
+@version     1.0.1
+@homepageURL https://github.com/quiddity-wp/style-tweaks
+@updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/youtube.user.css
+@license     CC-0
+@author      quiddity-wp
+==/UserStyle== */
+@-moz-document domain("www.youtube.com") {
+#masthead-container {
+    position: absolute !important;
+}
+#player,
+#primary,
+#player-container-outer {
+    margin-left: 0 !important;
+    max-width: none;
+}
+.ytd-watch {
+    --flex640-mode-full-width: blue !important;
+    --flex854-mode-full-width: blue !important;
+}
+}
