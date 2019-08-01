@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name        slashdot style tweaks
+@namespace   StylishThemes
+@version     1.0.1
+@homepageURL https://github.com/quiddity-wp/style-tweaks
+@updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/slashdot.user.css
+@license     CC-0
+@author      quiddity-wp
+==/UserStyle== */
+@-moz-document domain(slashdot.org)
+div.main-content {
+    margin-right: 2em !important;
+}
+aside#slashboxes {
+    display: none;
+}
+div#comments.a2commentwrap {
+    margin-right: 1em;
+}
