@@ -1,13 +1,13 @@
-/* (NOTE: this one breaks often : they change the HTML often)
-==UserStyle==
+/* ==UserStyle==
 @name        YouTube - de-sticky the header-bar and remove left-margin
 @namespace   StylishThemes
-@version     1.0.3
+@version     1.0.4
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/youtube.user.css
 @license     CC-0
 @author      quiddity-wp
 ==/UserStyle== */
+/* (NOTE: this one breaks often : they change the HTML often) */
 @-moz-document domain("www.youtube.com") {
 #masthead-container {
     position: absolute !important;
