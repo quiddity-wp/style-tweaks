@@ -7,3 +7,9 @@
 @license     CC-0
 @author      quiddity-wp
 ==/UserStyle== */
+
+@-moz-document domain("example.org"), domain("foobar.foo") {
+    .className {
+      param: value;
+    }
+}
