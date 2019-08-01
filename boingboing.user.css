@@ -1,0 +1,18 @@
+/* ==UserStyle==
+@name        boingboing - Remove/hide sidebar
+@namespace   StylishThemes
+@version     1.0.1
+@homepageURL https://github.com/quiddity-wp/style-tweaks
+@updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/boingboing.user.css
+@license     CC-0
+@author      quiddity-wp
+==/UserStyle== */
+@-moz-document domain("boingboing.net") {
+#content {
+    margin-right: 0 !important;
+}
+
+#sidebar {
+    display: none !important;
+}
+}
