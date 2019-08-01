@@ -7,3 +7,12 @@ To use:
 2. Open the file you want to try (above) and click the "Raw" button to install it in Stylus. They're easy to turn off/delete.
 
 Note:  Old versions (abandoned) but with some screenshots are at [userstyles.org](https://userstyles.org/users/302314)
+
+# contents
+
+	boingboing     Hides the sidebar. Cleaner. 
+	gdocs          Removes the dotted-line page-breaks! A single smooth white page!
+	phabricator    squish workboard into window  
+	slashdot       Hide the sidebar 
+	tumblr         move avatar-icons from left to right 	 
+	youtube        de-sticky the header-bar and remove left-margin 
