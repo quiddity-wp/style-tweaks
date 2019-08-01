@@ -19,3 +19,6 @@ Note:  Old versions (abandoned) but with some screenshots are at [userstyles.org
 	slashdot       Hide the sidebar 
 	tumblr         move avatar-icons from left to right 	 
 	youtube        de-sticky the header-bar and remove left-margin 
+
+# see also
+https://github.com/quiddity-wp/wikimedia-style-tweaks
