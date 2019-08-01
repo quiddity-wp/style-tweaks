@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name        gdocs style tweaks
+@namespace   StylishThemes
+@version     1.0.1
+@homepageURL https://github.com/quiddity-wp/style-tweaks
+@updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/gdocs.user.css
+@license     CC-0
+@author      Craig Dennis and quiddity-wp
+==/UserStyle== */
+/* Hide the dotted line for gdocs page-breaks
+code via https://www.quora.com/Is-it-possible-to-hide-the-page-break-line-in-the-latest-version-of-Google-Docs/answer/Craig-Dennis-3 */
+@-moz-document domain("docs.google.com") {
+    .kix-page-compact:before {
+      border: none;
+    }
+}
