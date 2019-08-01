@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name        phabricator style tweaks
+@namespace   StylishThemes
+@version     1.0.1
+@homepageURL https://github.com/quiddity-wp/style-tweaks
+@updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/phabricator.user.css
+@license     CC-0
+@author      quiddity-wp
+==/UserStyle== */
+@-moz-document domain("phabricator.wikimedia.org") {
+/* squish/show all workboard columns within the window */
+.aphront-multi-column-fixed .phui-workpanel-view, .phui-workpanel-view .phui-header-shell {
+        width: auto !important;
+    }
+}
