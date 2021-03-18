@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        gdocs - Removes the dotted-line page-breaks!
 @namespace   StylishThemes
-@version     1.0.3
+@version     1.0.4
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/gdocs.user.css
 @license     CC-0
@@ -10,7 +10,7 @@
 /* Hide the dotted line for gdocs page-breaks
 code via https://www.quora.com/Is-it-possible-to-hide-the-page-break-line-in-the-latest-version-of-Google-Docs/answer/Craig-Dennis-3 */
 @-moz-document domain("docs.google.com") {
-    .kix-page-compact:before {
-      border: none;
-    }
+    .kix-page-compact:before {border: none;}
+    .kix-page-paginated {box-shadow: none;}
+    .kix-page-canvas-compact-mode {border-top: none;}
 }
