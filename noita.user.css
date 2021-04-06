@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name        Noita wiki - use NoitaPixel font
+@namespace   StylishThemes
+@version     1.0.1
+@homepageURL https://github.com/quiddity-wp/style-tweaks
+@updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/noita.user.css
+@license     CC-0
+@author      quiddity-wp
+==/UserStyle== */
+@-moz-document domain("noita.fandom.com") {
+  .vectorTabs {font-family:NoitaPixel}
+  .vectorMenu {font-family:NoitaPixel}
+  #p-navigation {font-family:NoitaPixel; font-size:18px}
+  #firstHeading {font-family:NoitaPixel}
+}
