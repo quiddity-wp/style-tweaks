@@ -14,8 +14,8 @@ Note:  Old versions (abandoned) but with some screenshots are at [userstyles.org
 # contents
 
 	gdocs          Removes the dotted-line page-breaks! A single smooth white page!
-        noita          see the noita font (required separately - find on discord) on the noita wiki
-        phabricator    squish workboard into window  
+	noita          see the noita font (required separately - find on discord) on the noita wiki
+	phabricator    squish workboard into window  
 	slashdot       Hide the sidebar 
 	slashdot-dark  So bright! No more.
 	tumblr         move avatar-icons from left to right 	 
