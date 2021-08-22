@@ -1,12 +1,12 @@
 /* ==UserStyle==
-@name        Fandom wikis - hide footer nonsense
+@name        Fandom wikis - hide footers and sidebar
 @namespace   StylishThemes
-@version     1.0.1
+@version     1.0.2
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/fandom.user.css
 @license     CC-0
 @author      quiddity-wp
 ==/UserStyle== */
 @-moz-document domain("fandom.com") {
-.mcf-wrapper, .wds-global-footer__main {display: none;}
+.mcf-wrapper, .wds-global-footer__main, .page__right-rail {display: none;}
 }
