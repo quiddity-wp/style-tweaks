@@ -3,7 +3,7 @@
 Some random userstyles and userscripts
 
 To use: 
-1. Install Stylus: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) / [Chromium](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne/)
+1. Install Stylus: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) / [Chromium](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne/) (or [read more](https://github.com/openstyles/stylus/wiki/Usercss))
 2. Open the file you want to try (above) 
 3. Click the "Raw" button to install it in Stylus. 
 
