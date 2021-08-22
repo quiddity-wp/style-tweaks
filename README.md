@@ -13,6 +13,7 @@ Note:  Old versions (abandoned) but with some screenshots are at [userstyles.org
 
 # contents
 
+	fandom         Remove the footer and right-sidebar nonsense
 	gdocs          Removes the dotted-line page-breaks! A single smooth white page!
 	noita          see the noita font (required separately - find on discord) on the noita wiki
 	phabricator    squish workboard into window  
