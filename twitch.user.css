@@ -1,0 +1,23 @@
+/* ==UserStyle==
+@name        Twitch - Hide the Prime crap, and the purple background from subscribe button
+@namespace   StylishThemes
+@version     1.0.1
+@homepageURL https://github.com/quiddity-wp/style-tweaks
+@updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
+@license     CC-0
+@author      quiddity-wp
+==/UserStyle== */
+@-moz-document domain("twitch.tv"), domain("ext-twitch.tv") {
+/* Hide "Prime Notifications" badge */
+.top-nav__prime {visibility: hidden; }
+
+/* Hide "Prime subscription and loot reminder" */
+.extensions-dock__dock {display: none !important}
+
+/* Hide the "Free Loot" popup */
+div.prime-extension-root, div.prime-extension-root--show {display: none !important;}
+
+/* Quash the purple "subscribe" button */
+.ksFrFH {background-color: black}
+
+}
