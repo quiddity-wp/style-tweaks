@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Hide the Prime crap, and the purple background from subscribe button
 @namespace   StylishThemes
-@version     1.0.1
+@version     1.0.2
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -18,6 +18,6 @@
 div.prime-extension-root, div.prime-extension-root--show {display: none !important;}
 
 /* Quash the purple "subscribe" button */
-.ksFrFH {background-color: black}
+.ksFrFH, .boGviw, .efKhMx {background-color: black}
 
 }
