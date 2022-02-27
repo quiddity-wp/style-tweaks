@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Hide the Prime crap, and the purple background from subscribe button
 @namespace   StylishThemes
-@version     1.0.2
+@version     1.0.3
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -19,5 +19,8 @@ div.prime-extension-root, div.prime-extension-root--show {display: none !importa
 
 /* Quash the purple "subscribe" button */
 .ksFrFH, .boGviw, .efKhMx {background-color: black}
+
+/* Reduce visibility of recommended channels */
+div[aria-label="Recommended Channels"] {opacity: 0.2 !important}
 
 }
