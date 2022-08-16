@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Hide the Prime crap, and the purple background from subscribe button
 @namespace   StylishThemes
-@version     1.0.4
+@version     1.0.5
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -33,9 +33,14 @@
   div[aria-label="Recommended Channels"] {
     opacity: 0.2 !important;
   }
-  
+
+/* Hide anon nag banner */
   #twilight-sticky-footer-root {
     display: none;
   }
 
+/* bigger emote picker */
+  .emote-picker__tab-content {
+    height: 50vh !important;
+  }
 }
