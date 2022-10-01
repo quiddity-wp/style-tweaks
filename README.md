@@ -12,7 +12,6 @@ They're easy to turn off/delete.
 # contents
 
 	fandom         Remove the footer and right-sidebar nonsense.
-	noita          See the noita font (required separately - find it on discord) on the noita wiki.
 	gdocs          Removes the dotted-line page-breaks! A single smooth white page!
 	phabricator    Squish workboard into window.
 	slashdot       Hide the sidebar.
