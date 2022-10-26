@@ -1,0 +1,40 @@
+/* ==UserStyle==
+@name        gmail - Hide unused buttons
+@namespace   StylishThemes
+@version     1.0.1
+@homepageURL https://github.com/quiddity-wp/style-tweaks
+@updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/gmail.user.css
+@license     CC-0
+@author      quiddity-wp
+==/UserStyle== */
+
+@-moz-document domain("mail.google.com") {
+  
+  /* Hide unused button to shorten top-bar */
+  div[aria-label="Add to tasks"] {
+    display: none !important;
+  }
+  
+  /* Hide the useless formatting-toolbar options */
+  div[aria-label="Undo ‪(Ctrl-Z)‬"] {
+    display: none;
+  }
+  div[aria-label="Redo ‪(Ctrl-Y)‬"] {
+    display: none;
+  }
+  div[aria-label="Font ‪(Ctrl-Shift-5, Ctrl-Shift-6)‬"] {
+    display: none;
+  }
+  div[aria-label="Underline ‪(Ctrl-U)‬"] {
+    display: none;
+  }
+  div[aria-label="Text color"] {
+    display: none;
+  }
+  div[aria-label="Align"] {
+    display: none;
+  }
+  div[aria-label="Text color"] {
+    display: none;
+  }
+}
