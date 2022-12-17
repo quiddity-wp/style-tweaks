@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Hide the Prime crap, and the purple background from subscribe button
 @namespace   StylishThemes
-@version     1.0.6
+@version     1.0.7
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -43,4 +43,7 @@
   .emote-picker__tab-content {
     height: 50vh !important;
   }
+  
+/* gap beside settings -- INCOMPLETE
+  div[aria-label="Settings"] {padding-right: 30px !important} */
 }
