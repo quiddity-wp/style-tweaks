@@ -1,26 +1,17 @@
 /* ==UserStyle==
-@name        Tumblr - move avatar-icons from left to right
+@name        Tumblr - Embiggen content, squash ads, remove whitespace
 @namespace   StylishThemes
-@version     1.0.2
+@version     1.0.3
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/tumblr.user.css
 @license     CC-0
 @author      quiddity-wp
 ==/UserStyle== */
 @-moz-document domain("tumblr.com") {
-#posts {
-    margin-left: 0 !important;
-}
-.post_avatar_wrapper {
-    margin-left: 635px !important;
-}
-.l-container {
-    padding-left: 0 !important;
-}
-.l-content {
-    padding-left: 0 !important;
-}
-.l-header-container--refresh {
-    position: relative !important
-}
+/* Embiggen content */
+.u2tXn, .FtjPK, .BjErQ {max-width: unset !important; width: 900px;}
+/* Squash ads */
+.e1knl {display: none !important;}
+/* Remove left whitespace */
+.gPQR5 {margin-left: 0 !important;}
 }
