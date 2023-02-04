@@ -11,14 +11,15 @@ They're easy to turn off/delete.
 
 # contents
 
+	discord        Hide the "wave" stickers
 	fandom         Remove the footer and right-sidebar nonsense.
 	gdocs          Removes the dotted-line page-breaks! A single smooth white page!
-	phabricator    Squish workboard into window.
+	phabricator    Squish multi-column workboard into window-width.
 	slashdot       Hide the sidebar.
 	slashdot-dark  So bright! No more.
-	tumblr         Move avatar-icons from left to right.
+	tumblr         Embiggen content, squash ads, remove whitespace
 	twitch         Hide the "Prime" crap. Remove purple from "Subscribe" button.
-	youtube        De-sticky the header-bar and remove left-margin.
+	youtube        [broken] De-sticky the header-bar and remove left-margin.
 
 # see also
 https://github.com/quiddity-wp/wikimedia-style-tweaks
