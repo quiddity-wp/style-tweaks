@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.9
+@version     1.0.10
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -52,6 +52,7 @@
 /* less visibility for good bots in chat */
   .chat-line__message[data-user="moobot"] {opacity: 0.3;}
   .chat-line__message[data-user="nightbot"] {opacity: 0.6;}
+  .chat-line__message[data-user="streamelements"] {opacity: 0.3;}
   
 /* less visibility for redeems in chat */
   .tw-pd-l-1 {
