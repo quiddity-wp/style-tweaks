@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.10
+@version     1.0.11
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -9,7 +9,7 @@
 ==/UserStyle== */
 @-moz-document domain("twitch.tv"), domain("ext-twitch.tv") {
 
-  /* Hide "Prime Notifications" badge */
+/* Hide "Prime Notifications" badge */
   .top-nav__prime {
     visibility: hidden; 
   }
@@ -71,6 +71,7 @@
  .hronDY > button[aria-label="Open details for Ashleighhy"] {display: none}
  .hronDY > button[aria-label="Open details for Avasemaphore"] {display: none}
  .hronDY > button[aria-label="Open details for Aten"] {display: none}
+ .hronDY > button[aria-label="Open details for Audycia"] {display: none}
  .hronDY > button[aria-label="Open details for Blgdamjudge"] {display: none}
  .hronDY > button[aria-label="Open details for Brdybot"] {display: none}
  .hronDY > button[aria-label="Open details for Commanderroot"] {display: none}
@@ -88,6 +89,7 @@
  .hronDY > button[aria-label="Open details for Hentyechan"] {display: none}
  .hronDY > button[aria-label="Open details for Holaitzcarmennn"] {display: none}
  .hronDY > button[aria-label="Open details for Imsorryjusttesting	"] {display: none}
+ .hronDY > button[aria-label="Open details for Kattah"] {display: none}
  .hronDY > button[aria-label="Open details for La_kaylee"] {display: none}
  .hronDY > button[aria-label="Open details for Lanarayyyy"] {display: none}
  .hronDY > button[aria-label="Open details for Lurxx"] {display: none}
@@ -102,6 +104,7 @@
  .hronDY > button[aria-label="Open details for Streamfahrer"] {display: none}
  .hronDY > button[aria-label="Open details for Stygian_styx"] {display: none}
  .hronDY > button[aria-label="Open details for Twitchstreamerdiscord"] {display: none}
+ .hronDY > button[aria-label="Open details for Violets_tv"] {display: none}
  .hronDY > button[aria-label="Open details for Xyfm"] {display: none}
   
 /* gap beside settings -- INCOMPLETE
