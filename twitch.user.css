@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.11
+@version     1.0.12
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -25,7 +25,7 @@
   }
 
 /* Quash the purple "subscribe" button */
-  .ksFrFH, .boGviw, .efKhMx, .dDxrgX, .eVWnXL {
+  .ksFrFH, .boGviw, .efKhMx, .dDxrgX, .eVWnXL, .wgheP {
     background-color: black;
   }
 
