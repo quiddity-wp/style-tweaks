@@ -1,7 +1,7 @@
 /* ==UserStyle==
-@name        gmail - Hide unused buttons
+@name        gmail - Hide unused buttons, shrink sidebars
 @namespace   StylishThemes
-@version     1.0.1
+@version     1.0.2
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/gmail.user.css
 @license     CC-0
@@ -34,7 +34,17 @@
   div[aria-label="Align"] {
     display: none;
   }
-  div[aria-label="Text color"] {
-    display: none;
+  
+  /* Shrink the side-sidebars */
+  .aeN {
+    max-width: 50px !important;
+    min-width: 50px !important;
+  }
+  .V6.CL::before {
+    margin-left: 4px;
+  }
+  /* and side-folder/label lists */
+  .aqn {
+    min-width: 200px
   }
 }
