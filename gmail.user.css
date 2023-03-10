@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        gmail - Hide unused buttons, shrink sidebars
 @namespace   StylishThemes
-@version     1.0.2
+@version     1.0.3
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/gmail.user.css
 @license     CC-0
@@ -11,7 +11,7 @@
 @-moz-document domain("mail.google.com") {
   
   /* Hide unused button to shorten top-bar */
-  div[aria-label="Add to tasks"] {
+  div[aria-label="Add to tasks"], div[title="Add to tasks"] {
     display: none !important;
   }
   
