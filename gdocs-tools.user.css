@@ -1,0 +1,27 @@
+/* ==UserStyle==
+@name        GDocs - Hide some toolbar icons
+@namespace   github.com/openstyles/stylus
+@version     1.0.1
+@homepageURL https://github.com/quiddity-wp/style-tweaks
+@updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/gdocs-tools.user.css
+@license     CC-0
+@author      quiddity-wp
+@description Hide some toolbar icons
+==/UserStyle== */
+
+@-moz-document domain("docs.google.com") {
+  /* Hide toolbar icons */
+  #undoButton,
+  #redoButton,
+  #printButton, 
+  #spellGrammarCheckButton,
+  #formatPainterButton,
+  #zoomSelect,
+  #headingStyleSeparator,
+  #underlineButton,
+  #lineSpacingMenuButton,
+  #inputToolsSeparator,
+  #inputToolsToggleButton,
+  #inputToolsMenuButton
+  {display: none}
+}
