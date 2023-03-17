@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.12
+@version     1.0.13
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -92,6 +92,8 @@
  .hronDY > button[aria-label="Open details for Kattah"] {display: none}
  .hronDY > button[aria-label="Open details for La_kaylee"] {display: none}
  .hronDY > button[aria-label="Open details for Lanarayyyy"] {display: none}
+ .hronDY > button[aria-label="Open details for Iisabei"] {display: none}
+ .hronDY > button[aria-label="Open details for Lorypub"] {display: none}
  .hronDY > button[aria-label="Open details for Lurxx"] {display: none}
  .hronDY > button[aria-label="Open details for Meverywhere"] {display: none}
  .hronDY > button[aria-label="Open details for Newstreamers_support_chat"] {display: none}
