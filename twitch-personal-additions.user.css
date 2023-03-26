@@ -1,0 +1,28 @@
+/* ==UserStyle==
+@description    You should tweak this file! Replace usernames, all lower-case, as applicable.
+@name           Twitch - personal additions
+@namespace      github.com/openstyles/stylus
+==/UserStyle== */
+
+@-moz-document domain("twitch.tv") {
+
+/* Reduce opacity for streamer's channel bots you want to kinda-ignore */
+  .chat-line__message[data-user="lowercase_botname"] {opacity: 0.3;}
+  .chat-line__message[data-user="lowercase_botname2"] {opacity: 0.3;}
+  .chat-line__message[data-user="lowercase_botname3"] {opacity: 0.2;}
+  
+/* Highlight special people - BLUE background */
+  .chat-line__message[data-user="lowercase_username"], 
+  .chat-line__message[data-user="lowercase_username2"]
+  {background: #01029f;}
+
+/* Highlight special people - RED background */
+  .chat-line__message[data-user="lowercase_username"],
+  .chat-line__message[data-user="lowercase_username2"]
+  {background: #641b1b;}
+
+/* Reduce opacity of blocked "XXX"s in the FFZ extension - Ignore this if you don't use it */
+  .ffz--blocked {opacity: 0.2;}
+
+
+}
