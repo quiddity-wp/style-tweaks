@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.13
+@version     1.0.14
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -60,13 +60,19 @@
   }
 
 /* Hide lurk-bots in viewer-list */
+ .hronDY > button[aria-label="Open details for 0_applebadapple_0"] {display: none}
+ .hronDY > button[aria-label="Open details for 0_supa"] {display: none}
  .hronDY > button[aria-label="Open details for 01ella"] {display: none}
  .hronDY > button[aria-label="Open details for 01holaitzcarmennnella"] {display: none}
  .hronDY > button[aria-label="Open details for 0ax2"] {display: none}
+ .hronDY > button[aria-label="Open details for 0liviajadeee"] {display: none}
+ .hronDY > button[aria-label="Open details for A_ok"] {display: none}
  .hronDY > button[aria-label="Open details for Abjuui"] {display: none}
  .hronDY > button[aria-label="Open details for Actually__hannah"] {display: none}
+ .hronDY > button[aria-label="Open details for Adrianabarbero"] {display: none}
  .hronDY > button[aria-label="Open details for Aliceydra"] {display: none}
  .hronDY > button[aria-label="Open details for Aliengathering"] {display: none}
+ .hronDY > button[aria-label="Open details for Anna_banana_10"] {display: none}
  .hronDY > button[aria-label="Open details for Anotherttvviewer"] {display: none}
  .hronDY > button[aria-label="Open details for Ashleighhy"] {display: none}
  .hronDY > button[aria-label="Open details for Avasemaphore"] {display: none}
@@ -74,9 +80,11 @@
  .hronDY > button[aria-label="Open details for Audycia"] {display: none}
  .hronDY > button[aria-label="Open details for Blgdamjudge"] {display: none}
  .hronDY > button[aria-label="Open details for Brdybot"] {display: none}
+ .hronDY > button[aria-label="Open details for Chatstats_"] {display: none}
  .hronDY > button[aria-label="Open details for Commanderroot"] {display: none}
  .hronDY > button[aria-label="Open details for Creatisbot"] {display: none}
  .hronDY > button[aria-label="Open details for Cubieb0t"] {display: none}
+ .hronDY > button[aria-label="Open details for Dankingaround"] {display: none}
  .hronDY > button[aria-label="Open details for Digitalinstinct"] {display: none}
  .hronDY > button[aria-label="Open details for Discord_for_streamers__"] {display: none}
  .hronDY > button[aria-label="Open details for Discordstreamercommunity"] {display: none}
@@ -85,27 +93,46 @@
  .hronDY > button[aria-label="Open details for Einfachuwe42"] {display: none}
  .hronDY > button[aria-label="Open details for Elysian"] {display: none}
  .hronDY > button[aria-label="Open details for Feet"] {display: none}
+ .hronDY > button[aria-label="Open details for Freakybabetv"] {display: none}
  .hronDY > button[aria-label="Open details for Flatearthchannel"] {display: none}
+ .hronDY > button[aria-label="Open details for Flatearthchannel"] {display: none}
+ .hronDY > button[aria-label="Open details for Gamers_and_streamers"] {display: none}
  .hronDY > button[aria-label="Open details for Hentyechan"] {display: none}
  .hronDY > button[aria-label="Open details for Holaitzcarmennn"] {display: none}
  .hronDY > button[aria-label="Open details for Imsorryjusttesting	"] {display: none}
+ .hronDY > button[aria-label="Open details for Judgejudysiayer	"] {display: none}
  .hronDY > button[aria-label="Open details for Kattah"] {display: none}
  .hronDY > button[aria-label="Open details for La_kaylee"] {display: none}
  .hronDY > button[aria-label="Open details for Lanarayyyy"] {display: none}
  .hronDY > button[aria-label="Open details for Iisabei"] {display: none}
  .hronDY > button[aria-label="Open details for Lorypub"] {display: none}
+ .hronDY > button[aria-label="Open details for Lucentcrown12345678910"] {display: none}
  .hronDY > button[aria-label="Open details for Lurxx"] {display: none}
+ .hronDY > button[aria-label="Open details for Maddyson_moy_bog"] {display: none}
+ .hronDY > button[aria-label="Open details for Markzynk"] {display: none}
  .hronDY > button[aria-label="Open details for Meverywhere"] {display: none}
+ .hronDY > button[aria-label="Open details for Network_streamer_discord"] {display: none}
  .hronDY > button[aria-label="Open details for Newstreamers_support_chat"] {display: none}
+ .hronDY > button[aria-label="Open details for Nothingbutgay"] {display: none}
+ .hronDY > button[aria-label="Open details for Nuxbot_com"] {display: none}
+ .hronDY > button[aria-label="Open details for Own3d"] {display: none}
+ .hronDY > button[aria-label="Open details for Paradise_for_streamers"] {display: none}
  .hronDY > button[aria-label="Open details for Potatomalonettv"] {display: none}
+ .hronDY > button[aria-label="Open details for Public_enemy821"] {display: none}
  .hronDY > button[aria-label="Open details for Robohubby"] {display: none}
  .hronDY > button[aria-label="Open details for Rogueg1rl"] {display: none}
  .hronDY > button[aria-label="Open details for Smallstreamersdccommunity"] {display: none}
  .hronDY > button[aria-label="Open details for Soundalerts"] {display: none}
+ .hronDY > button[aria-label="Open details for Supa8"] {display: none}
  .hronDY > button[aria-label="Open details for Streamelements"] {display: none}
  .hronDY > button[aria-label="Open details for Streamfahrer"] {display: none}
  .hronDY > button[aria-label="Open details for Stygian_styx"] {display: none}
+ .hronDY > button[aria-label="Open details for Thelurkertv"] {display: none}
+ .hronDY > button[aria-label="Open details for Tteyyd"] {display: none}
+ .hronDY > button[aria-label="Open details for Turbopascai"] {display: none}
+ .hronDY > button[aria-label="Open details for Twitchdetails"] {display: none}
  .hronDY > button[aria-label="Open details for Twitchstreamerdiscord"] {display: none}
+ .hronDY > button[aria-label="Open details for Valentinaalcaraz"] {display: none}
  .hronDY > button[aria-label="Open details for Violets_tv"] {display: none}
  .hronDY > button[aria-label="Open details for Xyfm"] {display: none}
   
