@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.14
+@version     1.0.15
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -57,6 +57,11 @@
 /* less visibility for redeems in chat */
   .tw-pd-l-1 {
     opacity: 0.5;
+  }
+
+/* less visibility for placeholder text in chat */
+  .chat-wysiwyg-input__placeholder {
+    opacity: 0.3;
   }
 
 /* Hide lurk-bots in viewer-list */
