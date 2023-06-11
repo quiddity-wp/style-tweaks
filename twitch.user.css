@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.16
+@version     1.0.17
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -64,7 +64,12 @@
     opacity: 0.3;
   }
 
-/* Hide lurk-bots in viewer-list */
+/* Hide the last offline card */
+.side-nav-card__avatar--offline {
+  display: none;
+}
+
+/* Hide lurk-bots in viewer-list - more at https://twitchinsights.net/bots */
  .hronDY > button[aria-label="Open details for 0_applebadapple_0"] {display: none}
  .hronDY > button[aria-label="Open details for 0_supa"] {display: none}
  .hronDY > button[aria-label="Open details for 01ella"] {display: none}
@@ -87,6 +92,7 @@
  .hronDY > button[aria-label="Open details for Brdybot"] {display: none}
  .hronDY > button[aria-label="Open details for Chatstats_"] {display: none}
  .hronDY > button[aria-label="Open details for Commanderroot"] {display: none}
+ .hronDY > button[aria-label="Open details for Community_18k_members"] {display: none}
  .hronDY > button[aria-label="Open details for Creatisbot"] {display: none}
  .hronDY > button[aria-label="Open details for Cubieb0t"] {display: none}
  .hronDY > button[aria-label="Open details for Dankingaround"] {display: none}
@@ -99,7 +105,6 @@
  .hronDY > button[aria-label="Open details for Elysian"] {display: none}
  .hronDY > button[aria-label="Open details for Feet"] {display: none}
  .hronDY > button[aria-label="Open details for Freakybabetv"] {display: none}
- .hronDY > button[aria-label="Open details for Flatearthchannel"] {display: none}
  .hronDY > button[aria-label="Open details for Flatearthchannel"] {display: none}
  .hronDY > button[aria-label="Open details for Gamers_and_streamers"] {display: none}
  .hronDY > button[aria-label="Open details for Hentyechan"] {display: none}
@@ -121,17 +126,22 @@
  .hronDY > button[aria-label="Open details for Nothingbutgay"] {display: none}
  .hronDY > button[aria-label="Open details for Nuxbot_com"] {display: none}
  .hronDY > button[aria-label="Open details for Own3d"] {display: none}
+ .hronDY > button[aria-label="Open details for O0followme0o"] {display: none}
  .hronDY > button[aria-label="Open details for Paradise_for_streamers"] {display: none}
+ .hronDY > button[aria-label="Open details for Paulaarrigui"] {display: none}
  .hronDY > button[aria-label="Open details for Potatomalonettv"] {display: none}
  .hronDY > button[aria-label="Open details for Public_enemy821"] {display: none}
  .hronDY > button[aria-label="Open details for Robohubby"] {display: none}
  .hronDY > button[aria-label="Open details for Rogueg1rl"] {display: none}
  .hronDY > button[aria-label="Open details for Smallstreamersdccommunity"] {display: none}
+ .hronDY > button[aria-label="Open details for Smugslugbot"] {display: none}
  .hronDY > button[aria-label="Open details for Soundalerts"] {display: none}
  .hronDY > button[aria-label="Open details for Supa8"] {display: none}
  .hronDY > button[aria-label="Open details for Streamelements"] {display: none}
+ .hronDY > button[aria-label="Open details for Streamers_social_space"] {display: none}
  .hronDY > button[aria-label="Open details for Streamfahrer"] {display: none}
  .hronDY > button[aria-label="Open details for Stygian_styx"] {display: none}
+ .hronDY > button[aria-label="Open details for Tensu____________________"] {display: none}
  .hronDY > button[aria-label="Open details for Thelurkertv"] {display: none}
  .hronDY > button[aria-label="Open details for Tteyyd"] {display: none}
  .hronDY > button[aria-label="Open details for Turbopascai"] {display: none}
@@ -139,6 +149,7 @@
  .hronDY > button[aria-label="Open details for Twitchstreamerdiscord"] {display: none}
  .hronDY > button[aria-label="Open details for Valentinaalcaraz"] {display: none}
  .hronDY > button[aria-label="Open details for Violets_tv"] {display: none}
+ .hronDY > button[aria-label="Open details for World_of_streamers"] {display: none}
  .hronDY > button[aria-label="Open details for Xyfm"] {display: none}
   
 /* gap beside settings -- INCOMPLETE
