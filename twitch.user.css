@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.17
+@version     1.0.18
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -67,6 +67,11 @@
 /* Hide the last offline card */
 .side-nav-card__avatar--offline {
   display: none;
+}
+  
+/* Hide new "disclosure tool" about content warning */
+.disclosure-tool {
+  display: none !important;
 }
 
 /* Hide lurk-bots in viewer-list - more at https://twitchinsights.net/bots */
