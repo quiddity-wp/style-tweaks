@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.20
+@version     1.0.21
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -33,7 +33,14 @@
   .guPCKb {
     background-color: black !important;
   }
-    
+
+/* Hide the top badges */
+  .followed-side-nav-header {
+    display: none !important;
+  }
+  .collapse-toggle {
+    max-height: 30px;
+  }
 
 /* Reduce visibility of recommended channels */
   div[aria-label="Recommended Channels"], div[aria-label="Popular Channels"] {
