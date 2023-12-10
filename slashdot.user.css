@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        slashdot - Hide the sidebar & banner-ad
 @namespace   StylishThemes
-@version     1.0.3
+@version     1.0.4
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/slashdot.user.css
 @license     CC-0
@@ -9,16 +9,32 @@
 ==/UserStyle== */
 @-moz-document domain(slashdot.org) {
 div.main-content {
-    margin-right: 2em !important;
-    }
+  margin-right: 2em !important;
+}
 aside#slashboxes {
-    display: none;
-    }
+  display: none;
+}
 div#comments.a2commentwrap {
-    margin-right: 1em;
-    }
+  margin-right: 1em;
+}
 #announcement {
-    display: none !important;
-    }
+  display: none !important;
+}
+#fhft {
+  display: none
+}
+.bq {
+  margin: 0;
+  min-width: unset !important;
+}
+footer#ft {
+min-width: unset
+}
+div.main-content {
+margin-right: unset !important;
+}
+.grid_14 {
+  width: unset;
+}
 
 }
