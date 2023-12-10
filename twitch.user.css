@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.21
+@version     1.0.22
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -128,6 +128,7 @@
  .chatter-list-item > button[aria-label="Open details for Discord4small_streamers"] {display: none !important}
  .chatter-list-item > button[aria-label="Open details for Discord_for_streamers__"] {display: none !important}
  .chatter-list-item > button[aria-label="Open details for Discordstreamercommunity"] {display: none !important}
+ .chatter-list-item > button[aria-label="Open details for D0nk7"] {display: none !important}
  .chatter-list-item > button[aria-label="Open details for Drapsnatt"] {display: none !important}
  .chatter-list-item > button[aria-label="Open details for Dynaterra"] {display: none !important}
  .chatter-list-item > button[aria-label="Open details for Einfachuwe42"] {display: none !important}
