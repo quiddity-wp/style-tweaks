@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.22
+@version     1.0.23
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -20,12 +20,20 @@
   }
 
 /* Hide the "Free Loot" popup */
-  div.prime-extension-root, div.prime-extension-root--show {
+  div.prime-extension-root, 
+  div.prime-extension-root--show {
     display: none !important;
   }
 
-/* Quash the purple "subscribe" button */
-  .ksFrFH, .boGviw, .efKhMx, .dDxrgX, .eVWnXL, .wgheP, .jzPtTO, .gmCwLG {
+/* Quash the purple "subscribe" button -- keeps changing! */
+  .ksFrFH, 
+  .boGviw, 
+  .efKhMx, 
+  .dDxrgX, 
+  .eVWnXL, 
+  .wgheP, 
+  .jzPtTO, 
+  .gmCwLG {
     background-color: black;
   }
 
@@ -34,7 +42,7 @@
     background-color: black !important;
   }
 
-/* Hide the top badges */
+/* Hide the top sidebar badge - heart  */
   .followed-side-nav-header {
     display: none !important;
   }
@@ -43,7 +51,8 @@
   }
 
 /* Reduce visibility of recommended channels */
-  div[aria-label="Recommended Channels"], div[aria-label="Popular Channels"] {
+  div[aria-label="Recommended Channels"], 
+  div[aria-label="Popular Channels"] {
     opacity: 0.2 !important;
   }
 
@@ -63,9 +72,13 @@
   }
 
 /* less visibility for good bots in chat */
-  .chat-line__message[data-user="moobot"] {opacity: 0.3;}
-  .chat-line__message[data-user="nightbot"] {opacity: 0.6;}
-  .chat-line__message[data-user="streamelements"] {opacity: 0.3;}
+  .chat-line__message[data-user="moobot"],
+  .chat-line__message[data-user="streamelements"] {
+    opacity: 0.3;
+  }
+  .chat-line__message[data-user="nightbot"] {
+    opacity: 0.6;
+  }
   
 /* less visibility for redeems in chat */
   .tw-pd-l-1 {
@@ -93,102 +106,113 @@
   background-image: unset;  
 }
 
-/* Hide lurk-bots in viewer-list - more at https://twitchinsights.net/bots */
- .chatter-list-item > button[aria-label="Open details for 01ella"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for 01holaitzcarmennnella"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for 0aalicia"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for 0_applebadapple_0"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for 0ax2"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for 0liviajadeee"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for 0_supa"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for 7bvllet"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for 8hvdes"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Abjuui"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Actually__hannah"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Adrianabarbero"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Aliceydra"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Aliengathering"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Anna_banana_10"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Anotherttvviewer"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for A_ok"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Ashleighhy"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Aten"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Audycia"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Avasemaphore"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Batwomen___"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Blgdamjudge"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Brdybot"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Chatstats_"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Commanderroot"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Community_18k_members"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Creatisbot"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Cubieb0t"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Dankingaround"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Digitalinstinct"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Discord4small_streamers"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Discord_for_streamers__"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Discordstreamercommunity"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for D0nk7"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Drapsnatt"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Dynaterra"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Einfachuwe42"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Elysian"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Feet"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Flatearthchannel"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Flawlessdiamond123"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Fortnitebabe_"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Freakybabetv"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Gamers_and_streamers"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Hentyechan"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Holaitzcarmennn"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Iisabei"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Imsorryjusttesting	"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Judgejudysiayer	"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Kattah"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for La_kaylee"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Lanarayyyy"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Lorypub"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Lucentcrown12345678910"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Lurxx"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Maddyson_moy_bog"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Markzynk"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Meverywhere"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Network_streamer_discord"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Newstreamers_support_chat"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Norwegiangirl_"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Nothingbutgay"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Nuxbot_com"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for O0followme0o"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Own3d"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Paradise_for_streamers"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Paulaarrigui"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Potatomalonettv"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Public_enemy821"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Robohubby"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Rogueg1rl"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Smallstreamersdccommunity"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Smugslugbot"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Soundalerts"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Spofoh"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Streamelements"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Streamers_social_space"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Streamfahrer"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Stygian_styx"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Supa8"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Tensu____________________"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Thelurkertv"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Thequeenttv__________"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Tteyyd"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Turbopascai"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Twitchdetails"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Twitchstreamerdiscord"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Valentinaalcaraz"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Violets_tv"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Vlmercy"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for World_of_streamers"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Xyfm"] {display: none !important}
- .chatter-list-item > button[aria-label="Open details for Zkeey"] {display: none !important}
+/* add gaps beside the in-video icons for Settings & Clip */
+div>button[aria-label="Settings"] {
+  margin-right: 20px !important
+  }
+div>button[aria-label="Clip (alt+x)"] {
+  margin-right: 20px !important
+  }
 
-/* gap beside settings -- INCOMPLETE
-  div[aria-label="Settings"] {padding-right: 30px !important} */
+/* Hide lurk-bots in the viewer-list - 
+   more (and confirmed as bots) at 
+   https://twitchinsights.net/bots 
+   */
+ .chatter-list-item > button[aria-label="Open details for 01ella"], 
+ .chatter-list-item > button[aria-label="Open details for 01holaitzcarmennnella"], 
+ .chatter-list-item > button[aria-label="Open details for 0aalicia"], 
+ .chatter-list-item > button[aria-label="Open details for 0_applebadapple_0"], 
+ .chatter-list-item > button[aria-label="Open details for 0ax2"], 
+ .chatter-list-item > button[aria-label="Open details for 0liviajadeee"], 
+ .chatter-list-item > button[aria-label="Open details for 0_supa"], 
+ .chatter-list-item > button[aria-label="Open details for 7bvllet"], 
+ .chatter-list-item > button[aria-label="Open details for 8hvdes"], 
+ .chatter-list-item > button[aria-label="Open details for Abjuui"], 
+ .chatter-list-item > button[aria-label="Open details for Actually__hannah"], 
+ .chatter-list-item > button[aria-label="Open details for Adrianabarbero"], 
+ .chatter-list-item > button[aria-label="Open details for Aliceydra"], 
+ .chatter-list-item > button[aria-label="Open details for Aliengathering"], 
+ .chatter-list-item > button[aria-label="Open details for Anna_banana_10"], 
+ .chatter-list-item > button[aria-label="Open details for Anotherttvviewer"], 
+ .chatter-list-item > button[aria-label="Open details for A_ok"], 
+ .chatter-list-item > button[aria-label="Open details for Ashleighhy"], 
+ .chatter-list-item > button[aria-label="Open details for Aten"], 
+ .chatter-list-item > button[aria-label="Open details for Audycia"], 
+ .chatter-list-item > button[aria-label="Open details for Avasemaphore"], 
+ .chatter-list-item > button[aria-label="Open details for Batwomen___"], 
+ .chatter-list-item > button[aria-label="Open details for Blgdamjudge"], 
+ .chatter-list-item > button[aria-label="Open details for Brdybot"], 
+ .chatter-list-item > button[aria-label="Open details for Chatstats_"], 
+ .chatter-list-item > button[aria-label="Open details for Commanderroot"], 
+ .chatter-list-item > button[aria-label="Open details for Community_18k_members"], 
+ .chatter-list-item > button[aria-label="Open details for Creatisbot"], 
+ .chatter-list-item > button[aria-label="Open details for Cubieb0t"], 
+ .chatter-list-item > button[aria-label="Open details for Dankingaround"], 
+ .chatter-list-item > button[aria-label="Open details for Digitalinstinct"], 
+ .chatter-list-item > button[aria-label="Open details for Discord4small_streamers"], 
+ .chatter-list-item > button[aria-label="Open details for Discord_for_streamers__"], 
+ .chatter-list-item > button[aria-label="Open details for Discordstreamercommunity"], 
+ .chatter-list-item > button[aria-label="Open details for D0nk7"], 
+ .chatter-list-item > button[aria-label="Open details for Drapsnatt"], 
+ .chatter-list-item > button[aria-label="Open details for Dynaterra"], 
+ .chatter-list-item > button[aria-label="Open details for Einfachuwe42"], 
+ .chatter-list-item > button[aria-label="Open details for Elysian"], 
+ .chatter-list-item > button[aria-label="Open details for Feet"], 
+ .chatter-list-item > button[aria-label="Open details for Flatearthchannel"], 
+ .chatter-list-item > button[aria-label="Open details for Flawlessdiamond123"], 
+ .chatter-list-item > button[aria-label="Open details for Fortnitebabe_"], 
+ .chatter-list-item > button[aria-label="Open details for Freakybabetv"], 
+ .chatter-list-item > button[aria-label="Open details for Gamers_and_streamers"], 
+ .chatter-list-item > button[aria-label="Open details for Hentyechan"], 
+ .chatter-list-item > button[aria-label="Open details for Holaitzcarmennn"], 
+ .chatter-list-item > button[aria-label="Open details for Iisabei"], 
+ .chatter-list-item > button[aria-label="Open details for Imsorryjusttesting	"], 
+ .chatter-list-item > button[aria-label="Open details for Judgejudysiayer	"], 
+ .chatter-list-item > button[aria-label="Open details for Kattah"], 
+ .chatter-list-item > button[aria-label="Open details for La_kaylee"], 
+ .chatter-list-item > button[aria-label="Open details for Lanarayyyy"], 
+ .chatter-list-item > button[aria-label="Open details for Lorypub"], 
+ .chatter-list-item > button[aria-label="Open details for Lucentcrown12345678910"], 
+ .chatter-list-item > button[aria-label="Open details for Lurxx"], 
+ .chatter-list-item > button[aria-label="Open details for Maddyson_moy_bog"], 
+ .chatter-list-item > button[aria-label="Open details for Markzynk"], 
+ .chatter-list-item > button[aria-label="Open details for Meverywhere"], 
+ .chatter-list-item > button[aria-label="Open details for Network_streamer_discord"], 
+ .chatter-list-item > button[aria-label="Open details for Newstreamers_support_chat"], 
+ .chatter-list-item > button[aria-label="Open details for Norwegiangirl_"], 
+ .chatter-list-item > button[aria-label="Open details for Nothingbutgay"], 
+ .chatter-list-item > button[aria-label="Open details for Nuxbot_com"], 
+ .chatter-list-item > button[aria-label="Open details for O0followme0o"], 
+ .chatter-list-item > button[aria-label="Open details for Own3d"], 
+ .chatter-list-item > button[aria-label="Open details for Paradise_for_streamers"], 
+ .chatter-list-item > button[aria-label="Open details for Paulaarrigui"], 
+ .chatter-list-item > button[aria-label="Open details for Potatomalonettv"], 
+ .chatter-list-item > button[aria-label="Open details for Public_enemy821"], 
+ .chatter-list-item > button[aria-label="Open details for Robohubby"], 
+ .chatter-list-item > button[aria-label="Open details for Rogueg1rl"], 
+ .chatter-list-item > button[aria-label="Open details for Smallstreamersdccommunity"], 
+ .chatter-list-item > button[aria-label="Open details for Smugslugbot"], 
+ .chatter-list-item > button[aria-label="Open details for Soundalerts"], 
+ .chatter-list-item > button[aria-label="Open details for Spofoh"], 
+ .chatter-list-item > button[aria-label="Open details for Streamelements"], 
+ .chatter-list-item > button[aria-label="Open details for Streamers_social_space"], 
+ .chatter-list-item > button[aria-label="Open details for Streamfahrer"], 
+ .chatter-list-item > button[aria-label="Open details for Stygian_styx"], 
+ .chatter-list-item > button[aria-label="Open details for Supa8"], 
+ .chatter-list-item > button[aria-label="Open details for Tensu____________________"], 
+ .chatter-list-item > button[aria-label="Open details for Thelurkertv"], 
+ .chatter-list-item > button[aria-label="Open details for Thequeenttv__________"], 
+ .chatter-list-item > button[aria-label="Open details for Tteyyd"], 
+ .chatter-list-item > button[aria-label="Open details for Turbopascai"], 
+ .chatter-list-item > button[aria-label="Open details for Twitchdetails"], 
+ .chatter-list-item > button[aria-label="Open details for Twitchstreamerdiscord"], 
+ .chatter-list-item > button[aria-label="Open details for Valentinaalcaraz"], 
+ .chatter-list-item > button[aria-label="Open details for Violets_tv"], 
+ .chatter-list-item > button[aria-label="Open details for Vlmercy"], 
+ .chatter-list-item > button[aria-label="Open details for World_of_streamers"], 
+ .chatter-list-item > button[aria-label="Open details for Xyfm"], 
+ .chatter-list-item > button[aria-label="Open details for Zkeey"] {
+   display: none !important
+ }
+
 }
