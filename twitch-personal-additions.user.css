@@ -8,22 +8,51 @@
 @-moz-document domain("twitch.tv") {
 
 /* Reduce opacity for streamer's channel bots you want to kinda-ignore */
-  .chat-line__message[data-user="lowercase_botname"] {opacity: 0.3;}
-  .chat-line__message[data-user="lowercase_botname2"] {opacity: 0.3;}
-  .chat-line__message[data-user="lowercase_botname3"] {opacity: 0.2;}
+.chat-line__message[data-user="lowercase_botname"] {opacity: 0.3;}
+.chat-line__message[data-user="lowercase_botname2"] {opacity: 0.3;}
+.chat-line__message[data-user="lowercase_botname3"] {opacity: 0.2;}
   
 /* Highlight special people - BLUE background */
-  .chat-line__message[data-user="lowercase_username"], 
-  .chat-line__message[data-user="lowercase_username2"]
-  {background: #01029f;}
+.chat-line__message[data-user="lowercase_username"], 
+.chat-line__message[data-user="lowercase_username2"]
+{background: #01029f;}
 
 /* Highlight special people - RED background */
-  .chat-line__message[data-user="lowercase_username"],
-  .chat-line__message[data-user="lowercase_username2"]
-  {background: #641b1b;}
+.chat-line__message[data-user="lowercase_username"],
+.chat-line__message[data-user="lowercase_username2"]
+{background: #641b1b;}
 
 /* Reduce opacity of blocked "XXX"s in the FFZ extension - Ignore this if you don't use it */
-  .ffz--blocked {opacity: 0.2;}
+.ffz--blocked {opacity: 0.2;}
 
+/* Thinner sidebar */
+.side-nav--collapsed:not(.side-nav--hover-exp) {width: 4rem;}
+.tw-image-avatar {max-width: 90%; margin-left: 1px; }
 
+/* ffz tweaks to popout sizes */
+.ffz--emote-picker.ffz--emote-picker__tall .emote-picker__tab-content,
+.ffz--emote-picker.ffz--emote-picker__tall .emote-picker__nav-content-overflow {
+  max-height: 77vh !important;
+  border: 1px white solid
+}
+
+/* Rough-Indicator for line-wrap length */
+.chat-wysiwyg-input__editor {
+  background-image: image-set(url("https://cdn.frankerfacez.com/static/badges/twitch/2/broadcaster/1/1.png") 1x);
+  background-repeat: no-repeat;
+  background-size: 185px 3px;
+  background-position-y: 1px;
+}
+
+/* Bigger channel point redeem menu */
+.reward-center__content {
+  height: 83rem;
+  background-color: black  !important;
+}
+
+/* ?! */
+.gfTrQH {
+  margin-bottom: 55rem;
+}
+  
 }
