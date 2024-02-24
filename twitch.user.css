@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.23
+@version     1.0.24
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -73,6 +73,7 @@
 
 /* less visibility for good bots in chat */
   .chat-line__message[data-user="moobot"],
+  .chat-line__message[data-user="fossabot"],
   .chat-line__message[data-user="streamelements"] {
     opacity: 0.3;
   }
@@ -118,6 +119,14 @@ div>button[aria-label="Clip (alt+x)"] {
    more (and confirmed as bots) at 
    https://twitchinsights.net/bots 
    */
+   
+ .chatter-list-item > button[aria-label="Open details for 00_katie_is_desperate"], 
+ .chatter-list-item > button[aria-label="Open details for 0__sophia"], 
+ .chatter-list-item > button[aria-label="Open details for A_desperate_girl"], 
+ .chatter-list-item > button[aria-label="Open details for Anthony0lzpyn"], 
+ .chatter-list-item > button[aria-label="Open details for Sukoxi"], 
+ .chatter-list-item > button[aria-label="Open details for Aquaeww"], 
+ .chatter-list-item > button[aria-label="Open details for Mxrksy"], 
  .chatter-list-item > button[aria-label="Open details for 01ella"], 
  .chatter-list-item > button[aria-label="Open details for 01holaitzcarmennnella"], 
  .chatter-list-item > button[aria-label="Open details for 0aalicia"], 
@@ -127,6 +136,7 @@ div>button[aria-label="Clip (alt+x)"] {
  .chatter-list-item > button[aria-label="Open details for 0_supa"], 
  .chatter-list-item > button[aria-label="Open details for 7bvllet"], 
  .chatter-list-item > button[aria-label="Open details for 8hvdes"], 
+ .chatter-list-item > button[aria-label="Open details for A_l0nely_girl"], 
  .chatter-list-item > button[aria-label="Open details for Abjuui"], 
  .chatter-list-item > button[aria-label="Open details for Actually__hannah"], 
  .chatter-list-item > button[aria-label="Open details for Adrianabarbero"], 
@@ -134,6 +144,7 @@ div>button[aria-label="Clip (alt+x)"] {
  .chatter-list-item > button[aria-label="Open details for Aliengathering"], 
  .chatter-list-item > button[aria-label="Open details for Anna_banana_10"], 
  .chatter-list-item > button[aria-label="Open details for Anotherttvviewer"], 
+ .chatter-list-item > button[aria-label="Open details for Asmr_miyu"], 
  .chatter-list-item > button[aria-label="Open details for A_ok"], 
  .chatter-list-item > button[aria-label="Open details for Ashleighhy"], 
  .chatter-list-item > button[aria-label="Open details for Aten"], 
@@ -166,8 +177,9 @@ div>button[aria-label="Clip (alt+x)"] {
  .chatter-list-item > button[aria-label="Open details for Hentyechan"], 
  .chatter-list-item > button[aria-label="Open details for Holaitzcarmennn"], 
  .chatter-list-item > button[aria-label="Open details for Iisabei"], 
- .chatter-list-item > button[aria-label="Open details for Imsorryjusttesting	"], 
- .chatter-list-item > button[aria-label="Open details for Judgejudysiayer	"], 
+ .chatter-list-item > button[aria-label="Open details for Imsorryjusttesting"], 
+ .chatter-list-item > button[aria-label="Open details for Johnk4c55v"], 
+ .chatter-list-item > button[aria-label="Open details for Judgejudysiayer"], 
  .chatter-list-item > button[aria-label="Open details for Kattah"], 
  .chatter-list-item > button[aria-label="Open details for La_kaylee"], 
  .chatter-list-item > button[aria-label="Open details for Lanarayyyy"], 
@@ -190,6 +202,8 @@ div>button[aria-label="Clip (alt+x)"] {
  .chatter-list-item > button[aria-label="Open details for Public_enemy821"], 
  .chatter-list-item > button[aria-label="Open details for Robohubby"], 
  .chatter-list-item > button[aria-label="Open details for Rogueg1rl"], 
+ .chatter-list-item > button[aria-label="Open details for Samskio"], 
+ .chatter-list-item > button[aria-label="Open details for Sleepingbeautysyndrome"], 
  .chatter-list-item > button[aria-label="Open details for Smallstreamersdccommunity"], 
  .chatter-list-item > button[aria-label="Open details for Smugslugbot"], 
  .chatter-list-item > button[aria-label="Open details for Soundalerts"], 
