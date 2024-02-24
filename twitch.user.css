@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.24
+@version     1.0.25
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -121,6 +121,7 @@ div>button[aria-label="Clip (alt+x)"] {
    */
    
  .chatter-list-item > button[aria-label="Open details for 00_katie_is_desperate"], 
+ .chatter-list-item > button[aria-label="Open details for 00_alissa"], 
  .chatter-list-item > button[aria-label="Open details for 0__sophia"], 
  .chatter-list-item > button[aria-label="Open details for A_desperate_girl"], 
  .chatter-list-item > button[aria-label="Open details for Anthony0lzpyn"], 
@@ -200,6 +201,8 @@ div>button[aria-label="Clip (alt+x)"] {
  .chatter-list-item > button[aria-label="Open details for Paulaarrigui"], 
  .chatter-list-item > button[aria-label="Open details for Potatomalonettv"], 
  .chatter-list-item > button[aria-label="Open details for Public_enemy821"], 
+ .chatter-list-item > button[aria-label="Open details for Regressz"], 
+ .chatter-list-item > button[aria-label="Open details for Robich20"], 
  .chatter-list-item > button[aria-label="Open details for Robohubby"], 
  .chatter-list-item > button[aria-label="Open details for Rogueg1rl"], 
  .chatter-list-item > button[aria-label="Open details for Samskio"], 
@@ -213,6 +216,7 @@ div>button[aria-label="Clip (alt+x)"] {
  .chatter-list-item > button[aria-label="Open details for Streamfahrer"], 
  .chatter-list-item > button[aria-label="Open details for Stygian_styx"], 
  .chatter-list-item > button[aria-label="Open details for Supa8"], 
+ .chatter-list-item > button[aria-label="Open details for Tarsai"], 
  .chatter-list-item > button[aria-label="Open details for Tensu____________________"], 
  .chatter-list-item > button[aria-label="Open details for Thelurkertv"], 
  .chatter-list-item > button[aria-label="Open details for Thequeenttv__________"], 
@@ -223,8 +227,10 @@ div>button[aria-label="Clip (alt+x)"] {
  .chatter-list-item > button[aria-label="Open details for Valentinaalcaraz"], 
  .chatter-list-item > button[aria-label="Open details for Violets_tv"], 
  .chatter-list-item > button[aria-label="Open details for Vlmercy"], 
+ .chatter-list-item > button[aria-label="Open details for Williamvea2rw"], 
  .chatter-list-item > button[aria-label="Open details for World_of_streamers"], 
  .chatter-list-item > button[aria-label="Open details for Xyfm"], 
+ .chatter-list-item > button[aria-label="Open details for Zvgn"], 
  .chatter-list-item > button[aria-label="Open details for Zkeey"] {
    display: none !important
  }
