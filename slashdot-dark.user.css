@@ -2,7 +2,7 @@
 
 @name        slashdot - darkmode
 @namespace   StylishThemes
-@version     1.0.1
+@version     1.0.2
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/slashdot-dark.user.css
 @license     unknown
@@ -20,7 +20,7 @@
 
 #u2tabs.left_menu li.active, #links.left_menu li.active, #firehose article header .details, #comments article header .details, #comments .full .detail, #modal_box #editor #editpreview .details, #slashboxes article, .daybreak a, .msg p, footer[class="grid_24"], html, body, .col_wrapper, #u2tabs.left_menu li.active > span, #links.left_menu li.active > span, body > section
 {
-    background: #333333 !important;
+    background: #0f0f0f !important;
 }
 
 .linkCommentPage .active, #formtabs .active, #fh-paginate > span.active, .pref .preftab.active, #friendsmenu li.active, #modal-p .menu li.selected, button, input[type="submit"], input[type="reset"], input[type="button"], .btn
