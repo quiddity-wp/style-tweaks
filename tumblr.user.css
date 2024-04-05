@@ -1,17 +1,50 @@
 /* ==UserStyle==
 @name        Tumblr - Embiggen content, squash ads, remove whitespace
 @namespace   StylishThemes
-@version     1.0.3
+@version     1.0.4
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/tumblr.user.css
 @license     CC-0
 @author      quiddity-wp
 ==/UserStyle== */
 @-moz-document domain("tumblr.com") {
-/* Embiggen content */
+@media screen and (min-width: 900px) {/* Embiggen content */
 .u2tXn, .FtjPK, .BjErQ {max-width: unset !important; width: 900px;}
 /* Squash ads */
 .e1knl {display: none !important;}
 /* Remove left whitespace */
 .gPQR5 {margin-left: 0 !important;}
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px) {/* Embiggen content */
+.u2tXn, .FtjPK, .BjErQ {max-width: unset !important; width: 700px;}
+/* Squash ads */
+.e1knl {display: none !important;}
+/* Remove left whitespace */
+.gPQR5 {margin-left: 0 !important;}
+#base-container {margin-left: -160px !important;}
+}
+
+@media screen and (max-width: 900px) {
+  .persistent-player--theatre   {
+    margin-top: 230px;
+    max-height: 1230px !important;
+  }
+}
+
+.jGgIg .ML6ef {
+background-color: #222;
+}
+
+/* kill sidebar */
+@media screen and (max-width: 1162px) {
+  .h_Erh {display: none !important;}
+}
+
+@media screen and (min-width: 900px) and (max-width: 989px) {/* Embiggen content */
+.gPQR5 {justify-content: unset !important}
+}
+
+/* hide blog suggestions */
+.HphhS, .q1ZAL {display: none}
 }
