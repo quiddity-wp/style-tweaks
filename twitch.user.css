@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.26
+@version     1.0.27
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -25,7 +25,7 @@
     display: none !important;
   }
 
-/* Quash the purple "subscribe" button -- keeps changing! */
+/* Quash the purple "subscribe" button to black -- keeps changing! */
   .ksFrFH, 
   .boGviw, 
   .efKhMx, 
@@ -37,12 +37,12 @@
     background-color: black;
   }
 
-/* and more purple */
+/* and quash more purple */
   .guPCKb {
     background-color: black !important;
   }
 
-/* Hide the top sidebar badge - heart  */
+/* Hide the top-left sidebar badge - heart  */
   .followed-side-nav-header {
     display: none !important;
   }
@@ -81,7 +81,7 @@
     display: none;
   }
 
-/* less visibility for good bots in chat */
+/* less visibility for good bots' messages in chat */
   .chat-line__message[data-user="moobot"],
   .chat-line__message[data-user="fossabot"],
   .chat-line__message[data-user="streamelements"] {
@@ -125,7 +125,7 @@ div>button[aria-label="Clip (alt+x)"] {
   margin-right: 20px !important
   }
 
-/* Good bots get reduced opacity in the viewer-list */
+/* Good bots get reduced opacity in the viewer-listing */
  .chatter-list-item > button[aria-label="Open details for 9kmmrbot"],
  .chatter-list-item > button[aria-label="Open details for Blerp"],
  .chatter-list-item > button[aria-label="Open details for Buttsbot"],
@@ -136,7 +136,6 @@ div>button[aria-label="Clip (alt+x)"] {
  .chatter-list-item > button[aria-label="Open details for Kofistreambot"],
  .chatter-list-item > button[aria-label="Open details for Logiceftbot"],
  .chatter-list-item > button[aria-label="Open details for Lolrankbot"],
- .chatter-list-item > button[aria-label="Open details for Mikuia"],
  .chatter-list-item > button[aria-label="Open details for Moobot"],
  .chatter-list-item > button[aria-label="Open details for Mtgbot"],
  .chatter-list-item > button[aria-label="Open details for Nightbot"],
@@ -180,6 +179,8 @@ div>button[aria-label="Clip (alt+x)"] {
    */ 
  .chatter-list-item > button[aria-label="Open details for 00_alissa"], 
  .chatter-list-item > button[aria-label="Open details for 00_aaliyah"], 
+ .chatter-list-item > button[aria-label="Open details for 00_ava"], 
+ .chatter-list-item > button[aria-label="Open details for 00_darla"], 
  .chatter-list-item > button[aria-label="Open details for 00_ella"], 
  .chatter-list-item > button[aria-label="Open details for 00_katie_is_desperate"], 
  .chatter-list-item > button[aria-label="Open details for 01ella"], 
@@ -190,7 +191,9 @@ div>button[aria-label="Clip (alt+x)"] {
  .chatter-list-item > button[aria-label="Open details for 0liviajadeee"], 
  .chatter-list-item > button[aria-label="Open details for 0pshbot"], 
  .chatter-list-item > button[aria-label="Open details for 0__sophia"], 
+ .chatter-list-item > button[aria-label="Open details for 0_lonely_egirl"], 
  .chatter-list-item > button[aria-label="Open details for 0_supa"], 
+ .chatter-list-item > button[aria-label="Open details for 4jug"], 
  .chatter-list-item > button[aria-label="Open details for 7bvllet"], 
  .chatter-list-item > button[aria-label="Open details for 8hvdes"], 
  .chatter-list-item > button[aria-label="Open details for 8roe"], 
@@ -204,6 +207,7 @@ div>button[aria-label="Clip (alt+x)"] {
  .chatter-list-item > button[aria-label="Open details for Anna_banana_10"], 
  .chatter-list-item > button[aria-label="Open details for Anotherttvviewer"], 
  .chatter-list-item > button[aria-label="Open details for Anthony0lzpyn"], 
+ .chatter-list-item > button[aria-label="Open details for Anthonyorr97i"], 
  .chatter-list-item > button[aria-label="Open details for A_ok"], 
  .chatter-list-item > button[aria-label="Open details for Aquaeww"], 
  .chatter-list-item > button[aria-label="Open details for Ashleighhy"], 
@@ -240,6 +244,7 @@ div>button[aria-label="Clip (alt+x)"] {
  .chatter-list-item > button[aria-label="Open details for Icreateandestroythisworld"], 
  .chatter-list-item > button[aria-label="Open details for Iisabei"], 
  .chatter-list-item > button[aria-label="Open details for Imsorryjusttesting"], 
+ .chatter-list-item > button[aria-label="Open details for Jasonc8l4wl"], 
  .chatter-list-item > button[aria-label="Open details for Jeffl0ab8p"], 
  .chatter-list-item > button[aria-label="Open details for Johnk4c55v"], 
  .chatter-list-item > button[aria-label="Open details for Judgejudysiayer"], 
@@ -254,6 +259,7 @@ div>button[aria-label="Clip (alt+x)"] {
  .chatter-list-item > button[aria-label="Open details for Mark8bl82w"], 
  .chatter-list-item > button[aria-label="Open details for Markz_________"], 
  .chatter-list-item > button[aria-label="Open details for Meverywhere"], 
+ .chatter-list-item > button[aria-label="Open details for Mersufy"], 
  .chatter-list-item > button[aria-label="Open details for Mxrksy"], 
  .chatter-list-item > button[aria-label="Open details for Norwegiangirl_"], 
  .chatter-list-item > button[aria-label="Open details for Nothingbutgay"], 
@@ -266,6 +272,7 @@ div>button[aria-label="Clip (alt+x)"] {
  .chatter-list-item > button[aria-label="Open details for Psh_aa"], 
  .chatter-list-item > button[aria-label="Open details for Public_enemy821"], 
  .chatter-list-item > button[aria-label="Open details for Regressz"], 
+ .chatter-list-item > button[aria-label="Open details for Richard9oipjx"], 
  .chatter-list-item > button[aria-label="Open details for Robich20"], 
  .chatter-list-item > button[aria-label="Open details for Rockn__"], 
  .chatter-list-item > button[aria-label="Open details for Rodorigesuuu"], 
