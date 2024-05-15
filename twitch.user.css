@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.27
+@version     1.0.28
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -119,10 +119,10 @@
 
 /* add gaps beside the in-video icons for Settings & Clip */
 div>button[aria-label="Settings"] {
-  margin-right: 20px !important
+  margin-right: 45px !important
   }
 div>button[aria-label="Clip (alt+x)"] {
-  margin-right: 20px !important
+  margin-right: 10px !important
   }
 
 /* Good bots get reduced opacity in the viewer-listing */
