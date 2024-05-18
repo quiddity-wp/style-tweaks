@@ -2,57 +2,126 @@
 @description    You should tweak this file! Replace usernames, all lower-case, as applicable.
 @name           Twitch - personal additions
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.0.1
 ==/UserStyle== */
 
 @-moz-document domain("twitch.tv") {
 
+/* CHAT TWEAKS */
+/* ----------- */
 /* Reduce opacity for streamer's channel bots you want to kinda-ignore */
 .chat-line__message[data-user="lowercase_botname"] {opacity: 0.3;}
 .chat-line__message[data-user="lowercase_botname2"] {opacity: 0.3;}
 .chat-line__message[data-user="lowercase_botname3"] {opacity: 0.2;}
-  
 /* Highlight special people - BLUE background */
 .chat-line__message[data-user="lowercase_username"], 
 .chat-line__message[data-user="lowercase_username2"]
 {background: #01029f;}
-
 /* Highlight special people - RED background */
 .chat-line__message[data-user="lowercase_username"],
 .chat-line__message[data-user="lowercase_username2"]
 {background: #641b1b;}
 
-/* Reduce opacity of blocked "XXX"s in the FFZ extension - Ignore this if you don't use it */
-.ffz--blocked {opacity: 0.2;}
-
+/* CUSTOM UI TWEAKS */
+/* ---------------- */
 /* Thinner sidebar */
 .side-nav--collapsed:not(.side-nav--hover-exp) {width: 4rem;}
 .tw-image-avatar {max-width: 90%; margin-left: 1px; }
 
-/* ffz tweaks to popout sizes */
-.ffz--emote-picker.ffz--emote-picker__tall .emote-picker__tab-content,
-.ffz--emote-picker.ffz--emote-picker__tall .emote-picker__nav-content-overflow {
-  max-height: 77vh !important;
-  border: 1px white solid
-}
-
-/* Rough-Indicator for line-wrap length */
-.chat-wysiwyg-input__editor {
-  background-image: image-set(url("https://cdn.frankerfacez.com/static/badges/twitch/2/broadcaster/1/1.png") 1x);
-  background-repeat: no-repeat;
-  background-size: 185px 3px;
-  background-position-y: 1px;
-}
-
 /* Bigger channel point redeem menu */
 .reward-center__content {
-  height: 83rem;
+  height: 77vh !important;
   background-color: black  !important;
+  bottom: 5px !important;
+  position: absolute
 }
 
-/* ?! */
-.gfTrQH {
-  margin-bottom: 55rem;
+/* Reduce opacity of the stream's #tags */
+.keFxXM {
+  opacity: 0.3;
+}
+
+/* hide pokebot stuff completely */
+.poketwitch {
+display: none !important;
+background: black !important;
+}
+.poketwitch__content-wrapper  {
+background: black !important;
+}
+
+/* Reduce visibility of the pronouns extension */
+.user-pronoun {
+  color: gray;
+  border-color: gray;
+  font-size: 0.8em;
+}
+
+/* Reduce opacity streak messages
+.jjAyLi {
+  opacity: 0.3;
+} */
+
+/* eliminate caption extension */
+.evMqrC {
+display: none !important;
+visibility: hidden !important;
+}
+
+/* Hide "reactions" nonsense */
+.hljDeB {
+display: none !important;
+}
+
+/* smaller "manage your sub" AND A LOT OF OTHER THINGS BY ACCIDENT */
+.hLLag {
+  width: 35px
+}
+
+/* Gap above description */
+.lonoQi {
+  margin-top: 150px !important;
+}
+  
+/* FFZ STUFF - Safely Ignore this if you don't use it */
+/* ---------------- */
+/* Reduce opacity of blocked "XXX"s in the FFZ extension */
+.ffz--blocked {opacity: 0.2;}
+/* ffz tweaks to popout sizes */
+@media screen and (min-width: 1206px) {
+  .ffz--emote-picker.ffz--emote-picker__tall .emote-picker__tab-content,
+  .ffz--emote-picker.ffz--emote-picker__tall .emote-picker__nav-content-overflow {
+    max-height: 77vh !important;
+    border: 1px #b3b2b2 solid
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 1205px) {
+.ffz--emote-picker.ffz--emote-picker__tall .emote-picker__tab-content,
+.ffz--emote-picker.ffz--emote-picker__tall .emote-picker__nav-content-overflow {
+  max-height: 50vh !important;
+  border: 1px #b3b2b2 solid
+}
+}
+/* Add a break in FFZ's emotes list */
+.simplebar-content > button[data-key="BetterTTV-addon--ffzap.betterttv--global-effects"] {
+  margin-bottom: 40px !important;
+}
+/* Reduce opacity of FFZ links next to streamer name */
+.ffz--links {
+  opacity: 0.3;
+}
+/* Increase font size in thinner windows  - FFZ */
+@media screen and (max-width: 1456px) {
+  .chat-line__message {
+    font-size: 1.2em;
+  }
+}
+/* Fix overlay of "Stream chat" header in portrait mode layout */
+.stream-chat-header {
+  z-index: 0 !important;
+}
+.dUREKt {
+  z-index: 1 !important;
 }
   
 }
