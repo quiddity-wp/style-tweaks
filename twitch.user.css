@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.28
+@version     1.0.29
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -63,8 +63,12 @@
   .kYEeAt {
   height: 30px;
   padding-top: 2px !important;
-  opacity: 50%;
+  opacity: 10%;
   }
+/* hide the list-header icon */
+.caxXaW {
+opacity: 0.1}
+
 
 /* Hide anon nag banner */
   #twilight-sticky-footer-root {
