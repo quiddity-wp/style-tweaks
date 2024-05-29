@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.29
+@version     1.0.30
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -124,10 +124,16 @@ opacity: 0.1}
 /* add gaps beside the in-video icons for Settings & Clip */
 div>button[aria-label="Settings"] {
   margin-right: 45px !important
-  }
+}
 div>button[aria-label="Clip (alt+x)"] {
   margin-right: 10px !important
-  }
+}
+
+/* remove blur from hover */
+.top-bar {
+background: unset
+}
+
 
 /* Good bots get reduced opacity in the viewer-listing */
  .chatter-list-item > button[aria-label="Open details for 9kmmrbot"],
@@ -222,7 +228,9 @@ div>button[aria-label="Clip (alt+x)"] {
  .chatter-list-item > button[aria-label="Open details for Batwomen___"], 
  .chatter-list-item > button[aria-label="Open details for Blgdamjudge"], 
  .chatter-list-item > button[aria-label="Open details for Community_18k_members"], 
- .chatter-list-item > button[aria-label="Open details for Cuvi"], 
+ .chatter-list-item > button[aria-label="Open details for Cuvi"],  
+ .chatter-list-item > button[aria-label="Open details for Denyiai"], 
+ .chatter-list-item > button[aria-label="Open details for Dn9n"], 
  .chatter-list-item > button[aria-label="Open details for D0nk7"], 
  .chatter-list-item > button[aria-label="Open details for Dankfreeze"], 
  .chatter-list-item > button[aria-label="Open details for Dankingaround"], 
@@ -240,6 +248,7 @@ div>button[aria-label="Clip (alt+x)"] {
  .chatter-list-item > button[aria-label="Open details for Flatearthchannel"], 
  .chatter-list-item > button[aria-label="Open details for Flawlessdiamond123"], 
  .chatter-list-item > button[aria-label="Open details for Fortnitebabe_"], 
+ .chatter-list-item > button[aria-label="Open details for Framerates"], 
  .chatter-list-item > button[aria-label="Open details for Freakybabetv"], 
  .chatter-list-item > button[aria-label="Open details for Gamers_and_streamers"], 
  .chatter-list-item > button[aria-label="Open details for Georgew2ms8p"], 
@@ -283,6 +292,7 @@ div>button[aria-label="Clip (alt+x)"] {
  .chatter-list-item > button[aria-label="Open details for Robohubby"], 
  .chatter-list-item > button[aria-label="Open details for Rogueg1rl"], 
  .chatter-list-item > button[aria-label="Open details for Samskio"], 
+ .chatter-list-item > button[aria-label="Open details for Scorpyl2"], 
  .chatter-list-item > button[aria-label="Open details for Sleepingbeautysyndrome"], 
  .chatter-list-item > button[aria-label="Open details for Spofoh"], 
  .chatter-list-item > button[aria-label="Open details for Streamfahrer"], 
@@ -301,6 +311,7 @@ div>button[aria-label="Clip (alt+x)"] {
  .chatter-list-item > button[aria-label="Open details for Vmyk"], 
  .chatter-list-item > button[aria-label="Open details for Williamvea2rw"], 
  .chatter-list-item > button[aria-label="Open details for Xyfm"], 
+ .chatter-list-item > button[aria-label="Open details for Zhestykey"],
  .chatter-list-item > button[aria-label="Open details for Zkeey"],
  .chatter-list-item > button[aria-label="Open details for Zvgn"] {
    opacity: 10%;
