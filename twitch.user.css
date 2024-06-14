@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.31
+@version     1.0.32
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -222,6 +222,7 @@ background: unset
  .chatter-list-item > button[aria-label="Open details for A_ok"], 
  .chatter-list-item > button[aria-label="Open details for Aquaeww"], 
  .chatter-list-item > button[aria-label="Open details for Ashleighhy"], 
+ .chatter-list-item > button[aria-label="Open details for Ashley_Page"], 
  .chatter-list-item > button[aria-label="Open details for Asmr_miyu"], 
  .chatter-list-item > button[aria-label="Open details for Aten"], 
  .chatter-list-item > button[aria-label="Open details for Audycia"], 
