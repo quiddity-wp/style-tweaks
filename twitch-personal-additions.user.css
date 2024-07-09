@@ -24,7 +24,7 @@
 
 /* CUSTOM UI TWEAKS */
 /* ---------------- */
-/* Thinner sidebar */
+/* Thinner left-sidebar */
 .side-nav--collapsed:not(.side-nav--hover-exp) {width: 4rem;}
 .tw-image-avatar {max-width: 90%; margin-left: 1px; }
 
@@ -34,6 +34,10 @@
   background-color: black  !important;
   bottom: 5px !important;
   position: absolute
+}
+/* and new "bits reward" stuff in 2024 */
+.emote-picker__tab-content-bits-rewards {
+height: 63vh  !important;
 }
 
 /* Reduce opacity of the stream's #tags */
@@ -82,25 +86,47 @@ display: none !important;
 .lonoQi {
   margin-top: 150px !important;
 }
+
+/* hide random-pick subgifts */
+button[aria-label="Gift a Sub"]{
+display: none
+}
   
+/* remove sub nag */
+.tw-mg-1.tw-border-t.tw-pd-t-1.tw-mg-b-0 {
+  display: none;
+}
+
 /* FFZ STUFF - Safely Ignore this if you don't use it */
 /* ---------------- */
 /* Reduce opacity of blocked "XXX"s in the FFZ extension */
-.ffz--blocked {opacity: 0.2;}
+.ffz--blocked {
+  opacity: 0.2;
+}
 /* ffz tweaks to popout sizes */
 @media screen and (min-width: 1206px) {
   .ffz--emote-picker.ffz--emote-picker__tall .emote-picker__tab-content,
-  .ffz--emote-picker.ffz--emote-picker__tall .emote-picker__nav-content-overflow {
-    max-height: 77vh !important;
-    border: 1px #b3b2b2 solid
+  .ffz--emote-picker.ffz--emote-picker__tall .emote-picker__nav-content-overflow,.emote-picker {
+    max-height: 65vh !important;
+    width: unset !important;
+    max-width: 50rem;
   }
 }
 @media screen and (min-width: 400px) and (max-width: 1205px) {
-.ffz--emote-picker.ffz--emote-picker__tall .emote-picker__tab-content,
-.ffz--emote-picker.ffz--emote-picker__tall .emote-picker__nav-content-overflow {
-  max-height: 50vh !important;
-  border: 1px #b3b2b2 solid
+  .ffz--emote-picker.ffz--emote-picker__tall .emote-picker__tab-content,
+  .ffz--emote-picker.ffz--emote-picker__tall .emote-picker__nav-content-overflow,.emote-picker {
+    max-height: 50vh !important;
+    width: unset !important;
+    max-width: 50rem;
+  }
 }
+/* fix background */
+.tw-absolute.ffz-attached.ffz-attached--right.ffz-attached--up {
+  background: black !important;
+}
+/* less star vis */
+.ffz--favorite.ffz-i-star {
+  opacity: 0.1;
 }
 /* Add a break in FFZ's emotes list */
 .simplebar-content > button[data-key="BetterTTV-addon--ffzap.betterttv--global-effects"] {
@@ -113,7 +139,7 @@ display: none !important;
 /* Increase font size in thinner windows  - FFZ */
 @media screen and (max-width: 1456px) {
   .chat-line__message {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 }
 /* Fix overlay of "Stream chat" header in portrait mode layout */
@@ -122,6 +148,54 @@ display: none !important;
 }
 .dUREKt {
   z-index: 1 !important;
+}
+
+/* Fix FFZ popout moving */
+.chat-input > div:last-child .chat-input__buttons-container {
+  flex-grow: 0;
+}
+@media screen and (max-width: 1456px) {
+  .reward-center__content {
+    left:-150px;
+  }
+}
+
+/* Other Stuff! */
+
+/* hide random-pick subgifts */
+button[aria-label="Gift a Sub"]{
+display: none
+}
+
+/* smallify follow/unfollow */
+.lmNILC {
+  height: 5px !important;
+  opacity: 60%;
+} 
+
+/* smallify Resubscribe */
+button[aria-label="Resubscribe"],
+button[aria-label="Manage Your Sub"],
+button[aria-label="Continue Sub"] {
+  height: 8px !important;
+  width: 65px;
+  opacity: 60%;
+} 
+
+/* hide scrolling top-3 donors */
+.DGdsv {
+  display: none;
+}
+
+/* Bigger volume slider */
+.ScRangeInput-sc-q01wc3-0 {
+  width: 30rem !important;
+}
+
+/* hide bits completely */
+.kKpGeT:has(.ScFigure-sc-wkgzod-0),
+.cFdOrq:has(.ScAnimatedNumber-sc-1iib0w9-0) {
+display: none !important;
 }
   
 }
