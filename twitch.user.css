@@ -26,19 +26,12 @@
   }
 
 /* Quash the purple "subscribe" button to black -- keeps changing! */
-  .ksFrFH, 
-  .boGviw, 
-  .efKhMx, 
-  .dDxrgX, 
-  .eVWnXL, 
-  .wgheP, 
-  .jzPtTO, 
-  .gmCwLG {
+  .cFsYRp {
     background-color: black;
   }
 
 /* and quash more purple */
-  .guPCKb {
+  .dJEfYL {
     background-color: black !important;
   }
 
@@ -46,6 +39,10 @@
   .followed-side-nav-header {
     display: none !important;
   }
+/* and "Stories" */
+.hdoiLi {
+display: none !important;
+}
 /* Nudge the Collapse-toggle inwards  */
   .collapse-toggle {
     max-height: 30px;
