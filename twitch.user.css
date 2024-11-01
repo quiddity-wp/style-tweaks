@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.34
+@version     1.0.35
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -40,7 +40,7 @@
     display: none !important;
   }
 /* and "Stories" */
-.hdoiLi {
+.storiesLeftNavSectionCollapsedButton--txKvw {
 display: none !important;
 }
 /* Nudge the Collapse-toggle inwards  */
