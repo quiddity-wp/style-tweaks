@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.35
+@version     1.0.36
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -25,12 +25,7 @@
     display: none !important;
   }
 
-/* Quash the purple "subscribe" button to black -- keeps changing! */
-  .cFsYRp {
-    background-color: black;
-  }
-
-/* and quash more purple */
+/* Quash bits from purple to black: "subscribe" button, etc -- keeps changing! */
   .dJEfYL {
     background-color: black !important;
   }
