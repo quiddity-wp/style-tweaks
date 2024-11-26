@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.36
+@version     1.0.37
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -26,7 +26,8 @@
   }
 
 /* Quash bits from purple to black: "subscribe" button, etc -- keeps changing! */
-  .dJEfYL {
+  .dJEfYL,
+  .khjbBN {
     background-color: black !important;
   }
 
@@ -125,7 +126,6 @@ div>button[aria-label="Clip (alt+x)"] {
 .top-bar {
 background: unset
 }
-
 
 /* Good bots get reduced opacity in the viewer-listing */
  .chatter-list-item > button[aria-label="Open details for 9kmmrbot"],
