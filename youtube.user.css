@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        YouTube - fixes & tweaks
 @namespace   StylishThemes
-@version     1.0.7
+@version     1.0.8
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/youtube.user.css
 @license     CC-0
@@ -26,4 +26,9 @@
   #expand, #collapse {
     font-size: 22px;
   }
+  
+  /* remove pink fade from youtube playback progress bar */
+.ytp-play-progress {background: #FF2200 !important;}
+
+
 }
