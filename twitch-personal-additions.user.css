@@ -2,7 +2,7 @@
 @description    You should tweak this file! Replace usernames, all lower-case, as applicable.
 @name           Twitch - personal additions
 @namespace      github.com/openstyles/stylus
-@version        1.0.1
+@version        1.0.2
 ==/UserStyle== */
 
 @-moz-document domain("twitch.tv") {
@@ -54,7 +54,7 @@ background: black !important;
 background: black !important;
 }
 
-/* Reduce visibility of the pronouns extension */
+/* Reduce opacity of the pronouns extension */
 .user-pronoun {
   color: gray;
   border-color: gray;
@@ -77,24 +77,19 @@ visibility: hidden !important;
 display: none !important;
 }
 
-/* smaller "manage your sub" AND A LOT OF OTHER THINGS BY ACCIDENT */
+/* smaller "manage your sub" AND A LOT OF OTHER THINGS BY ACCIDENT
 .hLLag {
   width: 35px
-}
+} */
 
 /* Gap above description */
 .lonoQi {
-  margin-top: 150px !important;
+  margin-top: 190px !important;
 }
 
-/* hide random-pick subgifts */
-button[aria-label="Gift a Sub"]{
-display: none
-}
-  
-/* remove sub nag */
-.tw-mg-1.tw-border-t.tw-pd-t-1.tw-mg-b-0 {
-  display: none;
+/* Reduce opacity headers */
+#chat-room-header-label {
+  opacity: 30%;
 }
 
 /* FFZ STUFF - Safely Ignore this if you don't use it */
@@ -123,6 +118,10 @@ display: none
 /* fix background */
 .tw-absolute.ffz-attached.ffz-attached--right.ffz-attached--up {
   background: black !important;
+}
+/* remove sub nag */
+.tw-mg-1.tw-border-t.tw-pd-t-1.tw-mg-b-0 {
+  display: none;
 }
 /* less star vis */
 .ffz--favorite.ffz-i-star {
@@ -156,14 +155,16 @@ display: none
 }
 @media screen and (max-width: 1456px) {
   .reward-center__content {
-    left:-150px;
+    left:-225px;
   }
 }
 
 /* Other Stuff! */
 
 /* hide random-pick subgifts */
-button[aria-label="Gift a Sub"]{
+button[aria-label="Gift a Sub"],
+button[aria-label="Gift a Sub: 35% off"],
+.gift-subtember-button{
 display: none
 }
 
@@ -195,7 +196,62 @@ button[aria-label="Continue Sub"] {
 /* hide bits completely */
 .kKpGeT:has(.ScFigure-sc-wkgzod-0),
 .cFdOrq:has(.ScAnimatedNumber-sc-1iib0w9-0) {
-display: none !important;
+  display: none !important;
 }
-  
+
+/* smaller ad reminder */
+.bCLRwe, 
+.iicccR {
+  background: unset !important;
+}
+.iicccR, 
+.cktECa, 
+.iWJqAS {
+  max-height: 9px !important;
+}
+.bBYTep {max-height: 1px !important;}
+
+/* move around the settings menu (still busted in narrow windows) */
+.Layout-sc-1xcs6mc-0.chat-settings__popover {
+  position: absolute;
+  left:-540px;
+  top: -800px
+}
+
+/* Hide Skyrim bits-reward nonsesnse
+.overlay-reduced.move-overlay {display: none;}
+.Attached-sc-go6eno-0.cDMPKM {display:none}
+*/
+ 
+/* .mod-icon.ffz-mod-icon{
+opacity: 0.25;
+}
+*/
+
+/* wider bits menu */ 
+.reward-center-body {max-width: unset;}
+
+/* ignore captions icon */ 
+button[aria-label="Captions (c)"] {opacity:20%;}
+
+/* FFZ */
+.emote-hidden {opacity: 0.2}
+
+/* hide settings-menu items */
+.jNrYjU:has(button[data-a-target="player-settings-menu-item-report"]) {display: none;}
+.jNrYjU:has(button[data-a-target="player-settings-menu-item-report"]) +div {display: none;}
+.jHGpDy:has([aria-label="Events will still appear when chat is hidden, including polls, predictions, pinned chats, and Hype Trains."]) {display: none !important}
+.jHGpDy:has([aria-label="Events will still appear when chat is hidden, including polls, predictions, pinned chats, and Hype Trains."]) +div {display: none !important}
+
+/* highlight raids */
+.user-notice-line--highlighted > div {background: #540d19;}
+
+/* hide the nags for giftsub renew */
+.Layout-sc-1xcs6mc-0 .dxituZ {opacity:0.1;}
+
+/* Bigger resolution button */
+button[data-a-target="player-settings-menu-item-quality"] {font-size: large; height: 60px;}
+
+/* 
+ */
 }
