@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.37
+@version     1.0.38
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -10,93 +10,93 @@
 @-moz-document domain("twitch.tv"), domain("ext-twitch.tv") {
 
 /* Hide "Prime Notifications" badge */
-  .top-nav__prime {
-    visibility: hidden; 
-  }
+.top-nav__prime {
+  visibility: hidden; 
+}
 
 /* Hide "Prime subscription and loot reminder" */
-  .extensions-dock__dock {
-    display: none !important;
-  }
+.extensions-dock__dock {
+  display: none !important;
+}
 
 /* Hide the "Free Loot" popup */
-  div.prime-extension-root, 
-  div.prime-extension-root--show {
-    display: none !important;
-  }
+div.prime-extension-root, 
+div.prime-extension-root--show {
+  display: none !important;
+}
 
 /* Quash bits from purple to black: "subscribe" button, etc -- keeps changing! */
-  .dJEfYL,
-  .khjbBN {
-    background-color: black !important;
-  }
+.dJEfYL,
+.khjbBN {
+  background-color: black !important;
+}
 
 /* Hide the top-left sidebar badge - heart  */
-  .followed-side-nav-header {
-    display: none !important;
-  }
+.followed-side-nav-header {
+  display: none !important;
+}
 /* and "Stories" */
 .storiesLeftNavSectionCollapsedButton--txKvw {
-display: none !important;
+  display: none !important;
 }
 /* Nudge the Collapse-toggle inwards  */
-  .collapse-toggle {
-    max-height: 30px;
-    margin-left: -9px;
-    opacity: 0.4;
-    margin-bottom: 20px !important;
-  }
+.collapse-toggle {
+  max-height: 30px;
+  margin-left: -9px;
+  opacity: 0.4;
+  margin-bottom: 20px !important;
+}
 
 /* Reduce visibility of recommended channels */
-  div[aria-label="Recommended Channels"], 
-  div[aria-label="Popular Channels"] {
-    opacity: 0.25 !important;
-    margin: 35px 0;
-  }
-  .kYEeAt {
+.side-nav-section:not([aria-label="Followed Channels"]) {
+  opacity: 0.25 !important;
+  margin: 35px 0;
+}
+.kYEeAt {
   height: 30px;
   padding-top: 2px !important;
   opacity: 10%;
-  }
+}
 /* hide the list-header icon */
 .caxXaW {
-opacity: 0.1}
+  opacity: 0.1
+}
 
 
 /* Hide anon nag banner */
-  #twilight-sticky-footer-root {
-    display: none;
-  }
+#twilight-sticky-footer-root {
+  display: none;
+}
 
 /* bigger emote picker */
-  .emote-picker__tab-content {
-    height: 50vh !important;
-  }
+.emote-picker__tab-content {
+  height: 50vh !important;
+}
 
 /* Hide the monthly "Recap" nonsense */
-  .eEFkwG, .knAlKw {
-    display: none;
-  }
+.eEFkwG, .knAlKw {
+  display: none;
+}
 
 /* less visibility for good bots' messages in chat */
-  .chat-line__message[data-user="moobot"],
-  .chat-line__message[data-user="fossabot"],
-  .chat-line__message[data-user="streamelements"] {
-    opacity: 0.3;
-  }
-  .chat-line__message[data-user="nightbot"] {
-    opacity: 0.6;
-  }
+.chat-line__message[data-user="moobot"],
+.chat-line__message[data-user="fossabot"],
+.chat-line__message[data-user="streamelements"] {
+  opacity: 0.3;
+}
+.chat-line__message[data-user="nightbot"] {
+  opacity: 0.6;
+}
   
 /* less visibility for redeems in chat */
-  .tw-pd-l-1 {
-    opacity: 0.5;
-  }
+.tw-pd-l-1 {
+  opacity: 0.5;
+}
 
 /* less visibility for placeholder text in chat */
-  .chat-wysiwyg-input__placeholder {
-    opacity: 0.3;
-  }
+.chat-wysiwyg-input__placeholder {
+  opacity: 0.3;
+}
 
 /* Hide the last offline card */
 .side-nav-card__avatar--offline {
@@ -124,7 +124,7 @@ div>button[aria-label="Clip (alt+x)"] {
 
 /* remove blur from hover */
 .top-bar {
-background: unset
+  background: unset
 }
 
 /* Good bots get reduced opacity in the viewer-listing */
