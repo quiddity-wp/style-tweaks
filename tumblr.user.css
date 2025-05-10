@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Tumblr - Embiggen content, squash ads, remove whitespace
 @namespace   StylishThemes
-@version     1.0.4
+@version     1.0.5
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/tumblr.user.css
 @license     CC-0
@@ -48,3 +48,5 @@ background-color: #222;
 /* hide blog suggestions */
 .HphhS, .q1ZAL {display: none}
 }
+
+.Evcyl p {font-size: 120%;}
