@@ -1,8 +1,8 @@
 /* ==UserStyle==
 @name        Tumblr - Embiggen content, squash ads, remove whitespace
 @namespace   StylishThemes
-@version     1.0.6
-@homepageURL https://github.com/quiddity-wp/style-tweaks
+@version     1.0.7
+@homepageURL https://github.com/quiddity-wp/style-tweaks/blob/master/tumblr.user.css
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/tumblr.user.css
 @license     CC-0
 @author      quiddity-wp
@@ -47,7 +47,6 @@ background-color: #222;
 
 /* hide blog suggestions */
 .HphhS, .q1ZAL {display: none}
-}
 
 /* bigger post-content font  */
 .Evcyl p {font-size: 120%;}
@@ -70,3 +69,5 @@ div[role="banner"] {display: none}
 .h_Erh {flex-basis:0 !important; visibility: hidden !important; display: none !important}
 ._3xgk.Ril26 {flex-basis: 0 !important; min-width:unset !important;}
 .c9lq9 {justify-content: unset; margin-left: 15px;}
+
+}
