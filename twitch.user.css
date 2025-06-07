@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.39
+@version     1.0.40
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -25,9 +25,10 @@ div.prime-extension-root--show {
   display: none !important;
 }
 
-/* Quash bits from purple to black: "subscribe" button, etc -- keeps changing! */
+/* Quash bits from purple to black: "subscribe" button, "Chat" button, etc -- keeps changing! */
 .dJEfYL,
-.khjbBN {
+.khjbBN,
+.jxDhnp {
   background-color: black !important;
 }
 
@@ -62,7 +63,6 @@ div.prime-extension-root--show {
   opacity: 0.1
 }
 
-
 /* Hide anon nag banner */
 #twilight-sticky-footer-root {
   display: none;
@@ -74,8 +74,8 @@ div.prime-extension-root--show {
 }
 
 /* Hide the monthly "Recap" nonsense */
-.eEFkwG, .knAlKw {
-  display: none;
+.eEFkwG, .knAlKw , .egqCnl{
+  display: none !important;
 }
 
 /* less visibility for good bots' messages in chat */
