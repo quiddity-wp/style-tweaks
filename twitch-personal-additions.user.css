@@ -1,13 +1,16 @@
 /* ==UserStyle==
-@description    You should tweak this file! Replace usernames, all lower-case, as applicable.
 @name           Twitch - personal additions
 @namespace      github.com/openstyles/stylus
-@version        1.0.2
+@version        1.0.3
+@homepageURL    https://github.com/quiddity-wp/style-tweaks
+@updateURL      https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch-personal-additions.user.css
+@description    Twitch - personal additions
+@author         Me
 ==/UserStyle== */
 
-@-moz-document domain("twitch.tv") {
+@-moz-document domain("twitch.tv"), domain("ext-twitch.tv") {
 
-/* CHAT TWEAKS */
+/* CHAT TWEAKS  -- use these in your own private css */
 /* ----------- */
 /* Reduce opacity for streamer's channel bots you want to kinda-ignore */
 .chat-line__message[data-user="lowercase_botname"] {opacity: 0.3;}
@@ -184,7 +187,8 @@ button[aria-label="Continue Sub"] {
 } 
 
 /* hide scrolling top-3 donors */
-.DGdsv {
+.DGdsv,
+.cMeiZH {
   display: none;
 }
 
@@ -252,6 +256,28 @@ button[aria-label="Captions (c)"] {opacity:20%;}
 /* Bigger resolution button */
 button[data-a-target="player-settings-menu-item-quality"] {font-size: large; height: 60px;}
 
-/* 
- */
+/* fucking overlays */
+.extension-view__iframe {display: none;}
+
+/* smaller big emotes */
+.chat-line__message--emote:not(.chat-line__message--ffz-giant-emote img) {
+  height: 40px;
+}
+.ffz--inline:not(.scaled-modified-emote) .ffz-emoji {height: 40px !important; width: 40px !important;}
+.modified-emote, .scaled-modified-emote {height: 30px !important; width: 30px !important;}
+
+.emote-picker__emote-image {
+height: 32px !important;
+max-height: unset !important;
+width: unset !important;
+max-width: unset !important;
+}
+
+/* hide the new Combos bullshit */
+.oneTapIngressButton--inGsR {display: none !important}
+
+/* hide giftsub promo */
+.Layout-sc-1xcs6mc-0.ScLayoutCssVars-sc-1pn65j5-0.cSjibW.fAKhSf.tw-root--theme-dark {display: none !important}
+
+/* END */
 }
