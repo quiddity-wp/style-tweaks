@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.40
+@version     1.0.41
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -94,10 +94,11 @@ div.prime-extension-root--show {
 }
 
 /* less visibility for placeholder text in chat */
-.chat-wysiwyg-input__placeholder {
-  opacity: 0.3;
+.chat-input__textarea .tw-textarea::placeholder {
+  color: #909090;
+  opacity: 0.3; /* Firefox */
 }
-
+ 
 /* Hide the last offline card */
 .side-nav-card__avatar--offline {
   display: none;
