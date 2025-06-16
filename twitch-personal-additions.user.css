@@ -1,11 +1,11 @@
 /* ==UserStyle==
 @name           Twitch - personal additions
 @namespace      github.com/openstyles/stylus
-@version        1.0.3
-@homepageURL    https://github.com/quiddity-wp/style-tweaks
+@version        1.0.4
+@homepageURL    https://github.com/quiddity-wp/style-tweaks/blob/master/twitch-personal-additions.user.css
 @updateURL      https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch-personal-additions.user.css
 @description    Twitch - personal additions
-@author         Me
+@author         quiddity-wp
 ==/UserStyle== */
 
 @-moz-document domain("twitch.tv"), domain("ext-twitch.tv") {
