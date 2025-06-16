@@ -1,8 +1,8 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.41
-@homepageURL https://github.com/quiddity-wp/style-tweaks
+@version     1.0.42
+@homepageURL https://github.com/quiddity-wp/style-tweaks/blob/master/twitch.user.css
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
 @author      quiddity-wp
@@ -94,9 +94,11 @@ div.prime-extension-root--show {
 }
 
 /* less visibility for placeholder text in chat */
-.chat-input__textarea .tw-textarea::placeholder {
-  color: #909090;
-  opacity: 0.3; /* Firefox */
+.chat-input__textarea .tw-textarea::placeholder,
+.chat-wysiwyg-input__placeholder,
+[aria-label="Send a message"]::placeholder {
+  color: #909090 !important;
+  opacity: 0.3 !important; /* Firefox */
 }
  
 /* Hide the last offline card */
@@ -124,7 +126,8 @@ div>button[aria-label="Clip (alt+x)"] {
 }
 
 /* remove blur from hover */
-.top-bar {
+.top-bar,
+.player-controls {
   background: unset
 }
 
