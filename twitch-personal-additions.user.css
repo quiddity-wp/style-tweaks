@@ -199,7 +199,8 @@ button[aria-label="Continue Sub"] {
 
 /* hide bits completely */
 .kKpGeT:has(.ScFigure-sc-wkgzod-0),
-.cFdOrq:has(.ScAnimatedNumber-sc-1iib0w9-0) {
+.cFdOrq:has(.ScAnimatedNumber-sc-1iib0w9-0),
+[aria-label="Cheer"] {
   display: none !important;
 }
 
