@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.42
+@version     1.0.43
 @homepageURL https://github.com/quiddity-wp/style-tweaks/blob/master/twitch.user.css
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -126,8 +126,7 @@ div>button[aria-label="Clip (alt+x)"] {
 }
 
 /* remove blur from hover */
-.top-bar,
-.player-controls {
+.top-bar {
   background: unset
 }
 
