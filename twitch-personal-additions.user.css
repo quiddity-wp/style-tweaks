@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch - personal additions
 @namespace      github.com/openstyles/stylus
-@version        1.0.5
+@version        1.0.6
 @homepageURL    https://github.com/quiddity-wp/style-tweaks/blob/master/twitch-personal-additions.user.css
 @updateURL      https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch-personal-additions.user.css
 @description    Twitch - personal additions
@@ -86,7 +86,7 @@ display: none !important;
 } */
 
 /* Gap above description */
-.lonoQi {
+#live-channel-about-panel {
   margin-top: 190px !important;
 }
 
@@ -279,6 +279,9 @@ max-width: unset !important;
 
 /* hide giftsub promo */
 .Layout-sc-1xcs6mc-0.ScLayoutCssVars-sc-1pn65j5-0.cSjibW.fAKhSf.tw-root--theme-dark {display: none !important}
+
+/* Hide button tooltips */
+.foAhuv.tw-tooltip-layer {display: none}
 
 /* END */
 }
