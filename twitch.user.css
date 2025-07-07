@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.43
+@version     1.0.44
 @homepageURL https://github.com/quiddity-wp/style-tweaks/blob/master/twitch.user.css
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -28,7 +28,9 @@ div.prime-extension-root--show {
 /* Quash bits from purple to black: "subscribe" button, "Chat" button, etc -- keeps changing! */
 .dJEfYL,
 .khjbBN,
-.jxDhnp {
+.jxDhnp,
+[aria-label="Send Chat"],
+[data-a-target="follow-button"] {
   background-color: black !important;
 }
 
