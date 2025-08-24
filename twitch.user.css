@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.45
+@version     1.0.46
 @homepageURL https://github.com/quiddity-wp/style-tweaks/blob/master/twitch.user.css
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -31,7 +31,8 @@ div.prime-extension-root--show {
 .jxDhnp,
 [aria-label="Send Chat"],
 [data-a-target="follow-button"], 
-[data-a-target="subscribe-button"]{
+[data-a-target="subscribe-button"],
+[aria-label="Gift a Sub"] {
   background-color: black !important;
 }
 
@@ -39,7 +40,7 @@ div.prime-extension-root--show {
 .followed-side-nav-header {
   display: none !important;
 }
-/* and "Stories" */
+/* Hide the "Stories" */
 .storiesLeftNavSectionCollapsedButton--txKvw {
   display: none !important;
 }
@@ -51,7 +52,7 @@ div.prime-extension-root--show {
   margin-bottom: 5px !important;
 }
 
-/* Reduce visibility of recommended channels */
+/* Reduce visibility of Recommended Channels */
 .side-nav-section:not([aria-label="Followed Channels"]) {
   opacity: 0.25 !important;
   margin: 35px 0;
@@ -97,11 +98,10 @@ div.prime-extension-root--show {
 }
 
 /* less visibility for placeholder text in chat */
-.chat-input__textarea .tw-textarea::placeholder,
 .chat-wysiwyg-input__placeholder,
 [aria-label="Send a message"]::placeholder {
-  color: #909090 !important;
-  opacity: 0.3 !important; /* Firefox */
+  color: #909090;
+  opacity: 0.3;
 }
  
 /* Hide the last offline card */
