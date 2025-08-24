@@ -1,12 +1,17 @@
 /* ==UserStyle==
 @name        Discord - hide the "wave" stickers
 @namespace   StylishThemes
-@version     1.0.4
+@version     1.0.5
 @homepageURL https://github.com/quiddity-wp/style-tweaks
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/discord.user.css
 @license     CC-0
 @author      quiddity-wp
 ==/UserStyle== */
 @-moz-document domain("discord.com") {
-.clickableSticker-3HmpgV, .clickableSticker-3FN2_L, .clickableSticker_a1debe, .clickableSticker_abd7a8 {display:none}
+.clickableSticker-3HmpgV, 
+.clickableSticker-3FN2_L, 
+.clickableSticker_a1debe, 
+.clickableSticker_abd7a8, 
+[aria-label="Sticker, Sup, Doggo spins and greets you"] 
+  {display:none}
 }
