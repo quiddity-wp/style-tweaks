@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch - personal additions
 @namespace      github.com/openstyles/stylus
-@version        1.0.9
+@version        1.0.10
 @homepageURL    https://github.com/quiddity-wp/style-tweaks/blob/master/twitch-personal-additions.user.css
 @updateURL      https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch-personal-additions.user.css
 @description    Twitch - personal additions
@@ -102,7 +102,7 @@ display: none !important;
   opacity: 0.2;
 }
 /* ffz tweaks to popout sizes */
-@media screen and (min-width: 1206px) {
+@media screen and (min-width: 1500px) {
   .ffz--emote-picker.ffz--emote-picker__tall .emote-picker__tab-content,
   .ffz--emote-picker.ffz--emote-picker__tall .emote-picker__nav-content-overflow,.emote-picker {
     max-height: 65vh !important;
@@ -110,10 +110,10 @@ display: none !important;
     max-width: 50rem;
   }
 }
-@media screen and (min-width: 400px) and (max-width: 1205px) {
+@media screen and (min-width: 400px) and (max-width: 1499px) {
   .ffz--emote-picker.ffz--emote-picker__tall .emote-picker__tab-content,
   .ffz--emote-picker.ffz--emote-picker__tall .emote-picker__nav-content-overflow,.emote-picker {
-    max-height: 50vh !important;
+    max-height: 40vh !important;
     width: unset !important;
     max-width: 50rem;
   }
@@ -170,6 +170,9 @@ button[aria-label="Gift a Sub: 35% off"],
 .gift-subtember-button{
 display: none
 }
+
+/* Subtember */
+.fvMgHN {display: none !important}
 
 /* smallify follow/unfollow */
 .lmNILC {
@@ -264,9 +267,11 @@ button[data-a-target="player-settings-menu-item-quality"] {font-size: large; hei
 .chat-line__message--emote:not(.chat-line__message--ffz-giant-emote img) {
   height: 40px;
 }
-.ffz--inline:not(.scaled-modified-emote) .ffz-emoji {height: 40px !important; width: 40px !important;}
-.modified-emote, .scaled-modified-emote {height: 30px !important; width: 30px !important;}
+.ffz-emoji {height: 20px !important; width: 20px !important}
+.ffz--inline:not(.scaled-modified-emote) .ffz-emoji {height: 40px; width: 40px;}
+.modified-emote, .scaled-modified-emote {height: 30px; width: 30px;}
 
+/* In emotepicker */
 .emote-picker__emote-image {
 height: 32px !important;
 max-height: unset !important;
@@ -275,7 +280,8 @@ max-width: unset !important;
 }
 
 /* hide the new Combos bullshit */
-.oneTapIngressButton--inGsR {display: none !important}
+.oneTapIngressButton--inGsR,
+#one-tap-store-id {display: none !important}
 
 /* hide giftsub promo */
 .Layout-sc-1xcs6mc-0.ScLayoutCssVars-sc-1pn65j5-0.cSjibW.fAKhSf.tw-root--theme-dark {display: none !important}
