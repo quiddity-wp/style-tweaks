@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch - personal additions
 @namespace      github.com/openstyles/stylus
-@version        1.0.11
+@version        1.0.12
 @homepageURL    https://github.com/quiddity-wp/style-tweaks/blob/master/twitch-personal-additions.user.css
 @updateURL      https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch-personal-additions.user.css
 @description    Twitch - personal additions
@@ -197,7 +197,7 @@ button[aria-label="Continue Sub"] {
 
 /* Bigger volume slider */
 .ScRangeInput-sc-q01wc3-0 {
-  width: 30rem !important;
+  width: 20rem !important;
 }
 
 /* hide bits completely */
@@ -288,6 +288,15 @@ max-width: unset !important;
 
 /* Hide button tooltips */
 .foAhuv.tw-tooltip-layer {display: none}
+
+/* darker live tags */
+.ilvRlP {background-color: #5d1414;}
+
+/* non-purple seek bar */
+.seekbar-segment {background-color: #2d1111 !important}
+
+/* hide the clip cred promo */
+.gLGEhD {display: none !important;}
 
 /* END */
 }
