@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch - personal additions
 @namespace      github.com/openstyles/stylus
-@version        1.0.12
+@version        1.0.13
 @homepageURL    https://github.com/quiddity-wp/style-tweaks/blob/master/twitch-personal-additions.user.css
 @updateURL      https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch-personal-additions.user.css
 @description    Twitch - personal additions
@@ -10,20 +10,17 @@
 
 @-moz-document domain("twitch.tv"), domain("ext-twitch.tv") {
 
-/* CHAT TWEAKS  -- use these in your own private css */
+/* CHAT TWEAKS -- Copy-out these first ~6 lines, and use them in your own private CSS, with specific bot/user-names */
 /* ----------- */
 /* Reduce opacity for streamer's channel bots you want to kinda-ignore */
 .chat-line__message[data-user="lowercase_botname"] {opacity: 0.3;}
 .chat-line__message[data-user="lowercase_botname2"] {opacity: 0.3;}
-.chat-line__message[data-user="lowercase_botname3"] {opacity: 0.2;}
 /* Highlight special people - BLUE background */
 .chat-line__message[data-user="lowercase_username"], 
-.chat-line__message[data-user="lowercase_username2"]
-{background: #01029f;}
+.chat-line__message[data-user="lowercase_username2"] {background: #01029f;}
 /* Highlight special people - RED background */
 .chat-line__message[data-user="lowercase_username"],
-.chat-line__message[data-user="lowercase_username2"]
-{background: #641b1b;}
+.chat-line__message[data-user="lowercase_username2"] {background: #641b1b;}
 
 /* CUSTOM UI TWEAKS */
 /* ---------------- */
@@ -97,6 +94,7 @@ display: none !important;
 
 /* FFZ STUFF - Safely Ignore this if you don't use it */
 /* ---------------- */
+
 /* Reduce opacity of blocked "XXX"s in the FFZ extension */
 .ffz--blocked {
   opacity: 0.2;
@@ -138,12 +136,14 @@ display: none !important;
 .ffz--links {
   opacity: 0.3;
 }
-/* Increase font size in thinner windows  - FFZ */
-@media screen and (max-width: 1456px) {
+/* Increase font size in thinner windows  - FFZ
+@media screen and (max-width: 1056px) {
   .chat-line__message {
     font-size: 1.1em;
   }
-}
+} 
+*/
+
 /* Fix overlay of "Stream chat" header in portrait mode layout */
 .stream-chat-header {
   z-index: 0 !important;
@@ -263,13 +263,14 @@ button[data-a-target="player-settings-menu-item-quality"] {font-size: large; hei
 /* fucking overlays */
 .extension-view__iframe {display: none;}
 
-/* smaller big emotes */
+/* smaller big emotes
 .chat-line__message--emote:not(.chat-line__message--ffz-giant-emote img) {
   height: 40px;
 }
 .ffz-emoji {height: 20px !important; width: 20px !important}
 .ffz--inline:not(.scaled-modified-emote) .ffz-emoji {height: 40px; width: 40px;}
 .modified-emote, .scaled-modified-emote {height: 30px; width: 30px;}
+*/
 
 /* In emotepicker */
 .emote-picker__emote-image {
@@ -297,6 +298,13 @@ max-width: unset !important;
 
 /* hide the clip cred promo */
 .gLGEhD {display: none !important;}
+
+/* fix weird padding that appeared in chat-entry-box  */
+div:has(div.AoXTY) {padding-inline: unset !important;}
+
+/* try to fix layering in narrow windows */
+.Layout-sc-1xcs6mc-0.iGvYpN.reward-center__content.reward-center__content__with-bits-rewards,
+.reward-center__content {z-index: 900 !important;}
 
 /* END */
 }
