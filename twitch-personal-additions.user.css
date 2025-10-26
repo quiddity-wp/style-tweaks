@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch - personal additions
 @namespace      github.com/openstyles/stylus
-@version        1.0.13
+@version        1.0.14
 @homepageURL    https://github.com/quiddity-wp/style-tweaks/blob/master/twitch-personal-additions.user.css
 @updateURL      https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch-personal-additions.user.css
 @description    Twitch - personal additions
@@ -126,7 +126,7 @@ display: none !important;
 }
 /* less star vis */
 .ffz--favorite.ffz-i-star {
-  opacity: 0.1;
+  opacity: 0.3;
 }
 /* Add a break in FFZ's emotes list */
 .simplebar-content > button[data-key="BetterTTV-addon--ffzap.betterttv--global-effects"] {
@@ -299,12 +299,16 @@ max-width: unset !important;
 /* hide the clip cred promo */
 .gLGEhD {display: none !important;}
 
-/* fix weird padding that appeared in chat-entry-box  */
-div:has(div.AoXTY) {padding-inline: unset !important;}
+/* fix weird padding that appeared in chat-entry-box 
+div:has(div.AoXTY) {padding-inline: unset !important;} */
 
 /* try to fix layering in narrow windows */
 .Layout-sc-1xcs6mc-0.iGvYpN.reward-center__content.reward-center__content__with-bits-rewards,
 .reward-center__content {z-index: 900 !important;}
+
+/* hide Stories in sidbar */
+.storiesLeftNavSection--csO9S {display: none !important}
+.side-nav__title {padding-bottom: 10px;}
 
 /* END */
 }
