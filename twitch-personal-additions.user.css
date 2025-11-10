@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch - personal additions
 @namespace      github.com/openstyles/stylus
-@version        1.0.14
+@version        1.0.15
 @homepageURL    https://github.com/quiddity-wp/style-tweaks/blob/master/twitch-personal-additions.user.css
 @updateURL      https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch-personal-additions.user.css
 @description    Twitch - personal additions
@@ -151,6 +151,7 @@ display: none !important;
 .dUREKt {
   z-index: 1 !important;
 }
+.ffz-attached--up {bottom: 125%}
 
 /* Fix FFZ popout moving */
 .chat-input > div:last-child .chat-input__buttons-container {
@@ -161,6 +162,7 @@ display: none !important;
     left:-225px;
   }
 }
+
 
 /* Other Stuff! */
 
@@ -306,9 +308,12 @@ div:has(div.AoXTY) {padding-inline: unset !important;} */
 .Layout-sc-1xcs6mc-0.iGvYpN.reward-center__content.reward-center__content__with-bits-rewards,
 .reward-center__content {z-index: 900 !important;}
 
-/* hide Stories in sidbar */
+/* hide Stories in sidebar */
 .storiesLeftNavSection--csO9S {display: none !important}
 .side-nav__title {padding-bottom: 10px;}
+
+/* try to fix sidebar cards from getting stuck */
+.iJjfEt {transition-duration: 0ms !important;}
 
 /* END */
 }
