@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch - personal additions
 @namespace      github.com/openstyles/stylus
-@version        1.0.16
+@version        1.0.17
 @homepageURL    https://github.com/quiddity-wp/style-tweaks/blob/master/twitch-personal-additions.user.css
 @updateURL      https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch-personal-additions.user.css
 @description    Twitch - personal additions
@@ -315,6 +315,9 @@ div:has(div.AoXTY) {padding-inline: unset !important;} */
 
 /* try to fix sidebar cards from getting stuck */
 .iJjfEt {transition-duration: 0ms !important;}
+
+/* hide the pointless "Share" icon */
+.gMErFN {display: none}
 
 /* END */
 }
