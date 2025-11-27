@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Twitch - Minimal distractions
 @namespace   StylishThemes
-@version     1.0.47
+@version     1.0.48
 @homepageURL https://github.com/quiddity-wp/style-tweaks/blob/master/twitch.user.css
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch.user.css
 @license     CC-0
@@ -32,7 +32,8 @@ div.prime-extension-root--show {
 [aria-label="Send Chat"],
 [data-a-target="follow-button"], 
 [data-a-target="subscribe-button"],
-[aria-label="Gift a Sub"] {
+[aria-label="Gift a Sub"],
+[data-a-target="gift-button"] {
   background-color: black !important;
 }
 
