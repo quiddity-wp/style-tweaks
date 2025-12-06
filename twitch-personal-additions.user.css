@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch - personal additions
 @namespace      github.com/openstyles/stylus
-@version        1.0.17
+@version        1.0.18
 @homepageURL    https://github.com/quiddity-wp/style-tweaks/blob/master/twitch-personal-additions.user.css
 @updateURL      https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch-personal-additions.user.css
 @description    Twitch - personal additions
@@ -285,19 +285,20 @@ max-width: unset !important;
 
 /* hide the new Combos bullshit */
 .oneTapIngressButton--inGsR,
-#one-tap-store-id {display: none !important}
+#one-tap-store-id {display: none !important;}
 
 /* hide giftsub promo */
-.Layout-sc-1xcs6mc-0.ScLayoutCssVars-sc-1pn65j5-0.cSjibW.fAKhSf.tw-root--theme-dark {display: none !important}
+.Layout-sc-1xcs6mc-0.ScLayoutCssVars-sc-1pn65j5-0.cSjibW.fAKhSf.tw-root--theme-dark,
+.Layout-sc-1xcs6mc-0.kPgWRp {display: none !important}
 
 /* Hide button tooltips */
-.foAhuv.tw-tooltip-layer {display: none}
+.foAhuv.tw-tooltip-layer {display: none;}
 
 /* darker live tags */
 .ilvRlP {background-color: #5d1414;}
 
 /* non-purple seek bar */
-.seekbar-segment {background-color: #2d1111 !important}
+.seekbar-segment {background-color: #2d1111 !important;}
 
 /* hide the clip cred promo */
 .gLGEhD {display: none !important;}
@@ -317,7 +318,10 @@ div:has(div.AoXTY) {padding-inline: unset !important;} */
 .iJjfEt {transition-duration: 0ms !important;}
 
 /* hide the pointless "Share" icon */
-.gMErFN {display: none}
+.gMErFN {display: none;}
+
+/* Remove purple from "Share" button for resubs */
+.hWTXlR {background: unset;}
 
 /* END */
 }
