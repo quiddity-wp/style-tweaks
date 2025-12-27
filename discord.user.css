@@ -1,17 +1,182 @@
 /* ==UserStyle==
-@name        Discord - hide the "wave" stickers
+@name        Discord - hide a bunch of stuff
 @namespace   StylishThemes
-@version     1.0.5
-@homepageURL https://github.com/quiddity-wp/style-tweaks
+@version     1.0.6
+@homepageURL https://github.com/quiddity-wp/style-tweaks/blob/master/discord.user.css
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/discord.user.css
 @license     CC-0
 @author      quiddity-wp
 ==/UserStyle== */
 @-moz-document domain("discord.com") {
+/* Hide wave stickers */
 .clickableSticker-3HmpgV, 
 .clickableSticker-3FN2_L, 
 .clickableSticker_a1debe, 
 .clickableSticker_abd7a8, 
 [aria-label="Sticker, Sup, Doggo spins and greets you"] 
   {display:none}
+
+/* hide various bits */
+[class*='profileBadges'],
+[class*='badgelist'],
+[class*="premiumIcon"],
+[class*="bannerPremium"] {
+  visibility: hidden !important;
+}
+
+/* Hide Nitro stuff and effects  */
+[data-list-item-id*="nitro"],
+[data-list-item-id*="shop"],
+[class*="premiumTab"],
+[class*="giftButtonContainer"],
+[class*="progressBarContainer"],
+[class*="progressFraction"] > [class*="directionRight"],
+[id*="guild-header-popout-premium-subscribe"],
+[class*="tryItOutSection"],
+[class*="premiumFeatureBannerBackground"],
+[class*="newBackgroundTooltipContainer"],
+[id*="profile-customization-tab"] [class*="containerDefaultMargin"],
+[class*="children"] [class*="formNotice"],
+[class*="upsellOverlayContainer"],
+[class*="remiumHoverState"],
+[class*="popoutContainer"] [class*="ctaButton"],
+[class*="profileEffects"],
+[class*="reactionEmojiDetails"],
+[class*="otherEmojisContainer"],
+[class*="guildSection"],
+[aria-label="ADD_PACK"],
+[class*="nameAndDecorators"] [tabindex*="-1"],
+[class*="burstGlow"],
+[class*="notAppAsidePanel"] [class*="wrapper"] [class*="contentWrapper"] [class*="entrypoint"],
+[aria-label="UNAVAILABLE"],
+[class*="containerWithMargin"] [class*="textArea"] [class*="progressFraction"],
+[class*="burstReactionTooltipPrompt"] div,
+[class*="sansAttachButton"] [class*="buttons"] > button,
+[class*="shopForAllBackgroundImage"],
+[id*="profile-customization-tab"] [class*="container"],
+[class*="profileColors"] [class*="userPanelInnerThemed"] [class*="containerWrapper"],
+[class*="hasCollectiblesUpsell"] [class*="userPopoutInner"] [class*="containerWrapper"],
+[class*="userProfileModalInner"] [class*="topSection"] [class*="bannerSVGWrapper"] > mask,
+[class*="userProfileModalInner"] [class*="topSection"] [class*="bannerSVGWrapper"] > foreignObject {
+  display: none !important;
+}
+
+/* ???  */
+[class*="topSection"] [class*="header"],
+[class*="pointerEvents"],
+[class*="avatar"],
+[class*="header"] [class*="guildIcon"],
+[class*="premiumIcon"],
+[id*="channels"] ul[class*="content"] div[class*="containerWithMargin"] {
+  pointer-events: none !important;
+}
+
+/* ??? */
+[class*="relationshipButtons"],
+[class*="avatarWrapper"] {
+  pointer-events: all !important;
+}
+
+/* Resize premium (Nitro) banners to a non-premium (non-Nitro) state. */
+[class*="bannerSVGWrapper"] {
+  height: var(--nbanner-height) !important;
+  min-height: var(--nbanner-height) !important;
+  max-height: var(--nbanner-height) !important;
+}
+
+[class*="userProfileModalInner"] [class*="topSection"] [class*="bannerSVGWrapper"] {
+  height: var(--mbanner-height) !important;
+  min-height: var(--mbanner-height) !important;
+  max-height: var(--mbanner-height) !important;
+}
+
+/* ?? - but hid too much
+[class*="avatarPositionPremiumBanner"],
+[class*="avatarWrapperNormal"],
+[class*="userInfo"] [class*="avatar"] {
+  top: 16px !important;
+}
+*/
+
+/* Remove quest menu */
+[data-list-item-id="private-channels-uid_30___quests"],
+[data-list-item-id="private-channels-uid_3533___quests"],
+[data-list-item-id="private-channels-uid_10206___quests"] {display: none}
+[href="/quest-home"] {display: none;}
+
+/* Optional fixes: Vencord */
+/* Destroy some extra Vencord upselling that we didn't destroy with the base filters. */
+[class*="vc-settings-donate"] {
+  display: none !important;
+}
+
+/* Destroy the "download desktop app" icon. */
+/* From github.com:Vencord/Vesktop/blob/main/src/renderer/hideGarbage.css */
+[class^=listItem_]:has([data-list-item-id=guildsnav___app-download-button]),
+[class^=listItem_]:has(+ [class^=listItem_] [data-list-item-id=guildsnav___app-download-button]) {
+  display: none;
+}
+
+/* Hide Tabs for Subscriptions and Gift Inventory */
+[aria-label*="Abonnementer"],
+[aria-label*="Gave inventar"],
+[aria-label*="Abonnements"],
+[aria-label*="Geschenkinventar"],
+[aria-label*="Subscriptions"],
+[aria-label*="Gift Inventory"],
+[aria-label*="Suscripciones"],
+[aria-label*="Inventario de regalos"],
+[aria-label*="Inventaire des cadeaux"],
+[aria-label*="Pretplate"],
+[aria-label*="Popis darova"],
+[aria-label*="Abbonamenti"],
+[aria-label*="Inventario regali"],
+[aria-label*="Prenumeratos"],
+[aria-label*="Dovanų atsargos"],
+[aria-label*="Előfizetések"],
+[aria-label*="Ajándék leltár"],
+[aria-label*="Abonnementen"],
+[aria-label*="Cadeau-inventaris"],
+[aria-label*="Gaver"],
+[aria-label*="Subskripcje"],
+[aria-label*="Ekwipunek prezentów"],
+[aria-label*="Assinaturas"],
+[aria-label*="Inventário de presentes"],
+[aria-label*="Abonamente"],
+[aria-label*="Inventar cadouri"],
+[aria-label*="Tilaukset"],
+[aria-label*="Lahjaluettelo"],
+[aria-label*="Prenumerationer"],
+[aria-label*="Gåvolager"],
+[aria-label*="Đăng Ký"],
+[aria-label*="Kho Quà Tặng"],
+[aria-label*="Abonelikler"],
+[aria-label*="Hediye Envanteri"],
+[aria-label*="Předplatné"],
+[aria-label*="Inventář dárků"],
+[aria-label*="Συνδρομές"],
+[aria-label*="Απόθεμα δώρων"],
+[aria-label*="Абонаменти"],
+[aria-label*="Инвентар с подаръци"],
+[aria-label*="Подписки"],
+[aria-label*="Склад подарков"],
+[aria-label*="Передплати"],
+[aria-label*="Перелік подарунків"],
+[aria-label*="सब्सक्रिप्शन"],
+[aria-label*="गिफ्ट सूची"],
+[aria-label*="การสมัครสมาชิก"],
+[aria-label*="ห้องเก็บของขวัญ"],
+[aria-label*="订阅"],
+[aria-label*="礼物库"],
+[aria-label*="購読"],
+[aria-label*="ギフトインベントリ"],
+[aria-label*="訂閱"],
+[aria-label*="禮物庫存"],
+[aria-label*="구독"],
+[aria-label*="선물 인벤토리"] {
+  display: none !important;
+}
+
+/* ?? TODO: Fix for preferences hidden ?? */
+
 }
