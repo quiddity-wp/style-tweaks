@@ -1,34 +1,43 @@
 /* ==UserStyle==
 @name        YouTube - fixes & tweaks
 @namespace   StylishThemes
-@version     1.0.8
-@homepageURL https://github.com/quiddity-wp/style-tweaks
+@version     1.0.9
+@homepageURL https://github.com/quiddity-wp/style-tweaks/blob/master/youtube.user.css
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/youtube.user.css
 @license     CC-0
 @author      quiddity-wp
 ==/UserStyle== */
 @-moz-document domain("www.youtube.com") {
-/* (NOTE: this one often breaks: they change the HTML) */
+  
+/* de-sticky header
+#masthead-container {
+  position: absolute !important;
+} */
+  
+/* tweak widths */
+#player,
+#primary,
+#player-container-outer {
+  margin-left: 0 !important; max-width: none;
+}
+  
+/* Bigger buttons for description */
+#expand, #collapse {
+  font-size: 22px;
+}
+  
+/* remove pink fade from youtube playback progress bar */
+.ytp-play-progress {
+  background: #FF2200 !important;
+}
 
-  /* de-sticky header
-  #masthead-container {
-    position: absolute !important;
-  } */
-  
-  /* tweak widths */
-  #player,
-  #primary,
-  #player-container-outer {
-    margin-left: 0 !important; max-width: none;
-  }
-  
-  /* Bigger buttons for description */
-  #expand, #collapse {
-    font-size: 22px;
-  }
-  
-  /* remove pink fade from youtube playback progress bar */
-.ytp-play-progress {background: #FF2200 !important;}
+/* live chat fixes */
+/* (NOTE: this one often breaks: they change the HTML) */
+@media screen and (max-width: 900px) {
+  yt-live-chat-text-message-renderer {font-size: 19px}
+  #author-name {color: #62b949 !important}
+  #chat-container, ytd-live-chat-frame {height: 870px !important}
+}
 
 
 }
