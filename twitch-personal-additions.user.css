@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch - personal additions
 @namespace      github.com/openstyles/stylus
-@version        1.0.18
+@version        1.0.19
 @homepageURL    https://github.com/quiddity-wp/style-tweaks/blob/master/twitch-personal-additions.user.css
 @updateURL      https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch-personal-additions.user.css
 @description    Twitch - personal additions
@@ -222,12 +222,12 @@ button[aria-label="Continue Sub"] {
 }
 .bBYTep {max-height: 1px !important;}
 
-/* move around the settings menu (still busted in narrow windows) */
+/* move around the settings menu (still busted in narrow windows) 
 .Layout-sc-1xcs6mc-0.chat-settings__popover {
   position: absolute;
   left:-540px;
   top: -800px
-}
+}*/
 
 /* Hide Skyrim bits-reward nonsesnse
 .overlay-reduced.move-overlay {display: none;}
