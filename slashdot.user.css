@@ -1,8 +1,8 @@
 /* ==UserStyle==
 @name        slashdot - Hide the sidebar & banner-ad
 @namespace   StylishThemes
-@version     1.0.4
-@homepageURL https://github.com/quiddity-wp/style-tweaks
+@version     1.0.5
+@homepageURL https://github.com/quiddity-wp/style-tweaks/blob/master/slashdot.user.css
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/slashdot.user.css
 @license     CC-0
 @author      quiddity-wp
@@ -36,5 +36,7 @@ margin-right: unset !important;
 .grid_14 {
   width: unset;
 }
+
+.commentBody {font-size: 140%}
 
 }
