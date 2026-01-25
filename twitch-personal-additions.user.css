@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch - personal additions
 @namespace      github.com/openstyles/stylus
-@version        1.0.19
+@version        1.0.20
 @homepageURL    https://github.com/quiddity-wp/style-tweaks/blob/master/twitch-personal-additions.user.css
 @updateURL      https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch-personal-additions.user.css
 @description    Twitch - personal additions
@@ -169,6 +169,7 @@ display: none !important;
 /* hide random-pick subgifts */
 button[aria-label="Gift a Sub"],
 button[aria-label="Gift a Sub: 35% off"],
+[aria-label="35% off Gift Subs"],
 .gift-subtember-button{
 display: none
 }
@@ -186,8 +187,7 @@ display: none
 button[aria-label="Resubscribe"],
 button[aria-label="Manage Your Sub"],
 button[aria-label="Continue Sub"] {
-  height: 8px !important;
-  width: 65px;
+  width: 25px;
   opacity: 60%;
 } 
 
@@ -201,6 +201,8 @@ button[aria-label="Continue Sub"] {
 .ScRangeInput-sc-q01wc3-0 {
   width: 20rem !important;
 }
+/* Nudge FFZ compressor icon */
+.ffz--player-comp {left:10rem}
 
 /* hide bits completely */
 .kKpGeT:has(.ScFigure-sc-wkgzod-0),
@@ -266,14 +268,6 @@ button[data-a-target="player-settings-menu-item-quality"] {font-size: large; hei
 /* fucking overlays */
 .extension-view__iframe {display: none;}
 
-/* smaller big emotes
-.chat-line__message--emote:not(.chat-line__message--ffz-giant-emote img) {
-  height: 40px;
-}
-.ffz-emoji {height: 20px !important; width: 20px !important}
-.ffz--inline:not(.scaled-modified-emote) .ffz-emoji {height: 40px; width: 40px;}
-.modified-emote, .scaled-modified-emote {height: 30px; width: 30px;}
-*/
 
 /* In emotepicker */
 .emote-picker__emote-image {
@@ -291,8 +285,8 @@ max-width: unset !important;
 .Layout-sc-1xcs6mc-0.ScLayoutCssVars-sc-1pn65j5-0.cSjibW.fAKhSf.tw-root--theme-dark,
 .Layout-sc-1xcs6mc-0.kPgWRp {display: none !important}
 
-/* Hide button tooltips */
-.foAhuv.tw-tooltip-layer {display: none;}
+/* Hide button tooltips
+.foAhuv.tw-tooltip-layer {display: none;} */
 
 /* darker live tags */
 .ilvRlP {background-color: #5d1414;}
@@ -302,9 +296,6 @@ max-width: unset !important;
 
 /* hide the clip cred promo */
 .gLGEhD {display: none !important;}
-
-/* fix weird padding that appeared in chat-entry-box 
-div:has(div.AoXTY) {padding-inline: unset !important;} */
 
 /* try to fix layering in narrow windows */
 .Layout-sc-1xcs6mc-0.iGvYpN.reward-center__content.reward-center__content__with-bits-rewards,
@@ -317,11 +308,20 @@ div:has(div.AoXTY) {padding-inline: unset !important;} */
 /* try to fix sidebar cards from getting stuck */
 .iJjfEt {transition-duration: 0ms !important;}
 
-/* hide the pointless "Share" icon */
-.gMErFN {display: none;}
+/* hide the pointless "Share" icon 
+[title="Share"] {display: none;}*/
 
 /* Remove purple from "Share" button for resubs */
 .hWTXlR {background: unset;}
+
+/* Nudge up theature-mode bar
+.channel-root__scroll-area--theatre-mode #live-channel-stream-information, .channel-root__scroll-area--theatre-mode .channel-info-bar {top:5px !important;bottom: unset !important;} */
+/* 
+.Layout-sc-1xcs6mc-0 .foHQyB {
+  max-height: 60px !important;
+  width: 400px;
+  overflow: hidden
+} */
 
 /* END */
 }
