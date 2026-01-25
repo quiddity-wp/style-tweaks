@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Discord - hide a bunch of stuff
 @namespace   StylishThemes
-@version     1.0.6
+@version     1.0.7
 @homepageURL https://github.com/quiddity-wp/style-tweaks/blob/master/discord.user.css
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/discord.user.css
 @license     CC-0
@@ -104,6 +104,13 @@
 [data-list-item-id="private-channels-uid_10206___quests"] {display: none}
 [href="/quest-home"] {display: none;}
 
+/* remove new server menu, discover menu, and app download menu */
+[aria-label="Add a Server"],
+[aria-label="Discover"],
+[aria-label="Download Apps"] {
+  display: none
+}
+
 /* Optional fixes: Vencord */
 /* Destroy some extra Vencord upselling that we didn't destroy with the base filters. */
 [class*="vc-settings-donate"] {
@@ -179,4 +186,7 @@
 
 /* ?? TODO: Fix for preferences hidden ?? */
 
+/* other
+.f37cb1984c371ee5-animatedContainer {display: none;}
+ */
 }
