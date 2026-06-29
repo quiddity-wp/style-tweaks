@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           Twitch - personal additions
 @namespace      github.com/openstyles/stylus
-@version        1.0.21
+@version        1.0.22
 @homepageURL    https://github.com/quiddity-wp/style-tweaks/blob/master/twitch-personal-additions.user.css
 @updateURL      https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch-personal-additions.user.css
 @description    Twitch - personal additions
 @author         quiddity-wp
 ==/UserStyle== */
 
-@-moz-document domain("twitch.tv"), domain("ext-twitch.tv") {
+@-moz-document domain("twitch.tv") {
 
 /* CHAT TWEAKS -- Copy-out these first ~6 lines, and use them in your own private CSS, with specific bot/user-names */
 /* ----------- */
@@ -199,7 +199,7 @@ button[aria-label="Continue Sub"] {
 }
 
 /* Bigger volume slider */
-.ScRangeInput-sc-q01wc3-0 {
+[data-a-target="player-volume-slider"] {
   width: 20rem !important;
 }
 /* Nudge FFZ compressor icon */
@@ -326,6 +326,12 @@ max-width: unset !important;
 
 /* hide ad thing */
 [data-a-target="chat-alert-queue"] { opacity: 0.5; max-height: 80px}
+
+/* bigger emote picker */
+.emote-picker__image {
+width: 35px;
+height: 35px;
+}
 
 /* END */
 }
