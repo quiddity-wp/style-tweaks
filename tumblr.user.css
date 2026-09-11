@@ -1,15 +1,16 @@
 /* ==UserStyle==
 @name        Tumblr - Embiggen content, squash ads, remove whitespace
 @namespace   StylishThemes
-@version     1.0.8
+@version     1.0.9
 @homepageURL https://github.com/quiddity-wp/style-tweaks/blob/master/tumblr.user.css
 @updateURL   https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/tumblr.user.css
 @license     CC-0
 @author      quiddity-wp
 ==/UserStyle== */
 @-moz-document domain("tumblr.com") {
-@media screen and (min-width: 900px) {/* Embiggen content */
-.u2tXn, .FtjPK, .BjErQ {max-width: unset !important; width: 900px;}
+@media screen and (min-width: 900px) {
+/* Embiggen content */
+.u2tXn, .FtjPK, .BjErQ {max-width: unset !important; width: 850px;}
 /* Squash ads */
 .e1knl {display: none !important;}
 /* Remove left whitespace */
