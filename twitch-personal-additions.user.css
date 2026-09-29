@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch - personal additions
 @namespace      github.com/openstyles/stylus
-@version        1.0.23
+@version        1.0.24
 @homepageURL    https://github.com/quiddity-wp/style-tweaks/blob/master/twitch-personal-additions.user.css
 @updateURL      https://raw.githubusercontent.com/quiddity-wp/style-tweaks/master/twitch-personal-additions.user.css
 @description    Twitch - personal additions
@@ -285,7 +285,9 @@ max-width: unset !important;
 
 /* hide giftsub promo */
 .Layout-sc-1xcs6mc-0.ScLayoutCssVars-sc-1pn65j5-0.cSjibW.fAKhSf.tw-root--theme-dark,
-.Layout-sc-1xcs6mc-0.kPgWRp {display: none !important}
+.Layout-sc-1xcs6mc-0.kPgWRp,
+.giftExpirationCalloutCreatorLed--MnvcU, 
+.giftExpirationCalloutFinale--TZ3uy {display: none !important}
 
 /* Hide button tooltips
 .foAhuv.tw-tooltip-layer {display: none;} */
